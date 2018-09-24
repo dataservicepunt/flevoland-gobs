@@ -59,19 +59,19 @@
       $("form").submit(function (e) {
         e.preventDefault();
         var formData = $(e.target).serializeArray(),
-            aanmelding = {};
+            notificatie = {};
         $(formData).each(function (i, field) {
           if (field.name.substr(field.name.length - 2) === "[]") {
             field.name = field.name.substr(0, field.name.length - 2);
-            if (!aanmelding[field.name]) {
-              aanmelding[field.name] = [];
+            if (!notificatie[field.name]) {
+              notificatie[field.name] = [];
             }
-            aanmelding[field.name].push(field.value);
+            notificatie[field.name].push(field.value);
           } else {
-            aanmelding[field.name] = field.value;
+            notificatie[field.name] = field.value;
           }
         });
-        $.post("/api/notificaties/", aanmelding, function (response) {
+        $.post("/api/notificaties/", notificatie, function (response) {
           console.log(response);
         }, "json");
       });
