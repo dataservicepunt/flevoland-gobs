@@ -46,11 +46,11 @@
               <p>
 <?php foreach ($bruggen_en_sluizen["features"] as $feature) { ?>
                 <label>
-                  <input type="checkbox" name="objecten[]" value="<?=$feature["properties"]["nummer"]?>">
-                  <?=$feature["properties"]["naam"]?>
+                  <input type="checkbox" name="objecten[]" value="<?php echo $feature["properties"]["nummer"]; ?>">
+                  <?php echo $feature["properties"]["naam"]; ?>
                 </label>
                 <br>
-<? } ?>
+<?php } ?>
               </p>
               <p><button>Notificatie versturen</button></p>
             </fieldset>
@@ -93,8 +93,14 @@
             notificatie[field.name] = field.value;
           }
         });
-        $.post("/api/notificaties/", notificatie, function (response) {
+        var apiUrl = "http://apis.dataservicepunt.nl/flevoland/notificaties/";
+        $.post(apiUrl, notificatie, function (response) {
           console.log(response);
+          if (response.rs.errors) {
+            alert(response.rs.errors[0].description);
+          } else {
+            alert("notificatie verstuurd naar " + response.rs.recipients.totalCount + " telefoonnummer(s)");
+          }
         }, "json");
       });
     </script>

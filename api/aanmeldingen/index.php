@@ -1,5 +1,13 @@
 <?php
 
+header("Content-type: application/json");
+
+include("../private/config.php");
+
+$request = [
+  "datetime" => date("Y-m-d H:i:s"),
+];
+
 switch ($_SERVER["REQUEST_METHOD"]) {
   case "POST":
     if ($input = $_POST) {
@@ -8,12 +16,19 @@ switch ($_SERVER["REQUEST_METHOD"]) {
       // void
     } else {
       header("HTTP/1.1 400 Bad Request");
-      die;
+      break;
     }
-    header("Content-type: application/json");
-    die(json_encode([
-      "method" => "post",
-      "values" => $input
-    ]));
+    $request["telefoonnummer"] = $input["telefoonnummer"];
+    $request["objecten"] = $input["objecten"];
+
+    if (!file_exists($config["subscriptionsFilePath"])) {
+      copy("{$config["subscriptionsFilePath"]}.dist", $config["subscriptionsFilePath"]);
+    }
+    $subscriptions = json_decode(file_get_contents($config["subscriptionsFilePath"]), true);
+    $subscriptions["subscriptions"][$request["telefoonnummer"]] = $request["objecten"];
+    file_put_contents($config["subscriptionsFilePath"], json_encode($subscriptions));
+
     break;
 }
+
+die(json_encode($request));

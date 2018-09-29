@@ -40,11 +40,11 @@
               <p>
 <?php foreach ($bruggen_en_sluizen["features"] as $feature) { ?>
                 <label>
-                  <input type="checkbox" name="objecten[]" value="<?=$feature["properties"]["nummer"]?>">
-                  <?=$feature["properties"]["naam"]?>
+                  <input type="checkbox" name="objecten[]" value="<?php echo $feature["properties"]["nummer"]; ?>">
+                  <?php echo $feature["properties"]["naam"]; ?>
                 </label>
                 <br>
-<? } ?>
+<?php } ?>
               </p>
               <p><button>Selectie opslaan</button></p>
             </fieldset>
@@ -87,8 +87,10 @@
             aanmelding[field.name] = field.value;
           }
         });
-        $.post("/api/aanmeldingen/", aanmelding, function (response) {
+        var apiUrl = "http://apis.dataservicepunt.nl/flevoland/aanmeldingen/";
+        $.post(apiUrl, aanmelding, function (response) {
           console.log(response);
+          alert("aanmelding geslaagd");
         }, "json");
       });
     </script>

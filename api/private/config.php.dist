@@ -1,0 +1,12 @@
+<?php
+
+$config = [
+  "subscriptionFilePath" => "<subscriptionFilePath>",
+  "notificationsLogFilePath" => "<notificationsLogFilePath>",
+  "apiUrl" => "<apiUrl>",
+  "accessToken" => "<accessToken>",
+  "originator" => "<originator>",
+  "users" => [
+    '<username>' => '<sha1_password>'
+  ]
+];
