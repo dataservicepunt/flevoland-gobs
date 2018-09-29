@@ -1,6 +1,7 @@
 <?php
 
 header("Content-type: application/json");
+header("Access-Control-Allow-Origin: *");
 
 include("../../private/config.php");
 
@@ -32,3 +33,4 @@ switch ($_SERVER["REQUEST_METHOD"]) {
 }
 
 die(json_encode($request));
+
