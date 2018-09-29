@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.dataservicepunt.nl/flevoland/css/style.css">
     <title>App store</title>
   </head>
@@ -32,10 +31,9 @@
         <div class="content" style="max-width: 40rem; background: white; padding: 1rem; margin: auto;">
           <h1>App store</h1>
 <?php foreach ($apps["apps"] as $app) { ?>
-          <div class="app" style="border: 1px solid black; margin: 10px 0; padding: 10px">
-            <h2 style="max-width: 20em"><?php echo $app["naam"]; ?></h2>
+          <div class="app">
+            <h2 style="max-width: 20em"><a href="<?php echo $app["uri"]; ?>"><?php echo $app["naam"]; ?></a></h2>
             <p>contact: <?php echo $app["contact"]; ?></p>
-            <p><a href="<?php echo $app["uri"]; ?>"><?php echo $app["uri"]; ?></a></p>
           </div>
 <?php } ?>
         </div>
