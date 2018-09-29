@@ -87,7 +87,7 @@
             aanmelding[field.name] = field.value;
           }
         });
-        var apiUrl = "http://apis.dataservicepunt.nl/flevoland/aanmeldingen/";
+        var apiUrl = "http://apis.dataservicepunt.nl/aanmeldingen/";
         $.post(apiUrl, aanmelding, function (response) {
           console.log(response);
           alert("aanmelding geslaagd");

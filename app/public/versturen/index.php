@@ -93,7 +93,7 @@
             notificatie[field.name] = field.value;
           }
         });
-        var apiUrl = "http://apis.dataservicepunt.nl/flevoland/notificaties/";
+        var apiUrl = "http://apis.dataservicepunt.nl/notificaties/";
         $.post(apiUrl, notificatie, function (response) {
           console.log(response);
           if (response.rs.errors) {

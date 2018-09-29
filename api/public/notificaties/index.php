@@ -2,7 +2,7 @@
 
 header("Content-type: application/json");
 
-include("../private/config.php");
+include("../../private/config.php");
 
 $request = [
   "datetime" => date("Y-m-d H:i:s"),
@@ -37,7 +37,7 @@ switch ($_SERVER["REQUEST_METHOD"]) {
     file_put_contents($config["notificationsLogFilePath"], json_encode($notificationsLog));
 
     $subscriptions = json_decode(file_get_contents($config["subscriptionsFilePath"]), true);
-    
+
     $telefoonnummers = [];
     foreach ($request["objecten"] as $object) {
       foreach ($subscriptions["subscriptions"] as $telefoonnummer => $objecten) {

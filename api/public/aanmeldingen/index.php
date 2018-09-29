@@ -2,7 +2,7 @@
 
 header("Content-type: application/json");
 
-include("../private/config.php");
+include("../../private/config.php");
 
 $request = [
   "datetime" => date("Y-m-d H:i:s"),
