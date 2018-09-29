@@ -1,5 +1,5 @@
 <?php
-  $bruggen_en_sluizen = json_decode(file_get_contents("https://www.dataservicepunt.nl/flevoland/data/bruggen_en_sluizen/bruggen_en_sluizen.geojson"), true);
+  $apps = json_decode(file_get_contents("http://www.dataservicepunt.nl/flevoland/apps/?temp"), true);
 ?>
 <!doctype html>
 <html lang="en">
@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.dataservicepunt.nl/flevoland/css/style.css">
-    <title>Aanmelden</title>
+    <title>App store</title>
   </head>
   <body>
     <nav>
@@ -29,27 +29,14 @@
     <main>
       <div class="wrapper" style="padding-top: 8rem">
         <div class="content" style="max-width: 40rem; background: white; padding: 1rem; margin: auto;">
-          <form method="POST">
-            <fieldset>
-              <legend>Aanmelden</legend>
-              <p>Vul onderstaand formulier in om u aan te melden voor notificaties over de beschikbaarheid van bruggen en sluizen.</p>
-              <p>
-                <label for="telefoonnummer">Voer het telefoonnummer in waarop u notificaties wenst te ontvangen:</label><br>
-                <input type="text" id="telefoonnummer" name="telefoonnummer" placeholder="Telefoonnummer">
-              </p>
-              <p>Selecteer de bruggen en sluizen waarover u notificaties wenst te ontvangen:</p>
-              <p>
-<?php foreach ($bruggen_en_sluizen["features"] as $feature) { ?>
-                <label>
-                  <input type="checkbox" name="objecten[]" value="<?php echo $feature["properties"]["nummer"]; ?>">
-                  <?php echo $feature["properties"]["naam"]; ?>
-                </label>
-                <br>
+          <h1>App store</h1>
+<?php foreach ($apps["apps"] as $app) { ?>
+          <div class="app" style="border: 1px solid black; margin: 10px 0; padding: 10px">
+            <h2 style="max-width: 20em"><?php echo $app["naam"]; ?></h2>
+            <p>contact: <?php echo $app["contact"]; ?></p>
+            <p><a href="<?php echo $app["uri"]; ?>"><?php echo $app["uri"]; ?></a></p>
+          </div>
 <?php } ?>
-              </p>
-              <p><button>Selectie opslaan</button></p>
-            </fieldset>
-          </form>
         </div>
       </div>
     </main>
