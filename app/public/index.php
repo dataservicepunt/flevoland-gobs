@@ -57,29 +57,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-    <script>
-      $("form").submit(function (e) {
-        e.preventDefault();
-        var formData = $(e.target).serializeArray(),
-            aanmelding = {};
-        $(formData).each(function (i, field) {
-          if (field.name.substr(field.name.length - 2) === "[]") {
-            field.name = field.name.substr(0, field.name.length - 2);
-            if (!aanmelding[field.name]) {
-              aanmelding[field.name] = [];
-            }
-            aanmelding[field.name].push(field.value);
-          } else {
-            aanmelding[field.name] = field.value;
-          }
-        });
-        var apiUrl = "http://apis.dataservicepunt.nl/aanmeldingen/";
-        $.post(apiUrl, aanmelding, function (response) {
-          console.log(response);
-          alert("aanmelding geslaagd");
-        }, "json");
-      });
-    </script>
   </body>
 </html>
