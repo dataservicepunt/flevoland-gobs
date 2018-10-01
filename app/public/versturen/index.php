@@ -20,9 +20,9 @@
   <body>
     <nav>
       <div class="wrapper">
-        <a href="https://www.dataservicepunt.nl/flevoland/">Data Servicepunt Flevoland</a> |
+        <a href="https://www.dataservicepunt.nl/flevoland/">Data&nbsp;Servicepunt&nbsp;Flevoland</a> |
         <a href="https://www.dataservicepunt.nl/flevoland/data/index.json">Dataportaal</a> |
-        <a href="http://apps.dataservicepunt.nl/">App store</a> |
+        <a href="http://apps.dataservicepunt.nl/">App&nbsp;store</a> |
         <a href="mailto:flevoland@dataservicepunt.nl">flevoland@dataservicepunt.nl</a>
       </div>
     </nav>
