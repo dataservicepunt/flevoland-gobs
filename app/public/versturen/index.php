@@ -21,8 +21,8 @@
     <nav>
       <div class="wrapper">
         <a href="https://www.dataservicepunt.nl/flevoland/">Data&nbsp;Servicepunt&nbsp;Flevoland</a> |
-        <a href="https://www.dataservicepunt.nl/flevoland/data/index.json">Data marts</a> |
-        <a href="https://www.dataservicepunt.nl/flevoland/data/index.json">Data services (API's)</a> |
+        <a href="https://apis.dataservicepunt.nl/">Data marts</a> |
+        <a href="https://apis.dataservicepunt.nl/">Data services (API's)</a> |
         <a href="http://apps.dataservicepunt.nl/">Apps</a> |
         <a href="mailto:flevoland@dataservicepunt.nl">flevoland@dataservicepunt.nl</a>
       </div>
