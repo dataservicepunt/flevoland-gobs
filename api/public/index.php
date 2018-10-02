@@ -30,14 +30,14 @@
     <main>
       <div class="wrapper" style="padding-top: 8rem">
         <div class="content" style="max-width: 40rem; background: white; padding: 1rem; margin: auto;">
-          <h1>data marts</h1>
+          <h1>Data marts</h1>
 <?php foreach ($data["datamarts"] as $datamart) { ?>
           <div class="datamart">
             <h2 style="max-width: 20em"><a href="<?php echo $datamart["uri"]; ?>"><?php echo $datamart["naam"]; ?></a></h2>
             <p>contact: <?php echo $datamart["contact"]; ?></p>
           </div>
 <?php } ?>
-          <h1>data services (API's)</h1>
+          <h1>Data services (API's)</h1>
 <?php foreach ($data["dataservices"] as $dataservices) { ?>
           <div class="dataservice">
             <h2 style="max-width: 20em"><a href="<?php echo $dataservices["uri"]; ?>"><?php echo $dataservices["naam"]; ?></a></h2>
