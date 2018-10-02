@@ -1,5 +1,6 @@
 <?php
-  $apps = json_decode(file_get_contents("http://www.dataservicepunt.nl/flevoland/apps/?temp"), true);
+  $appsUri = "http://www.dataservicepunt.nl/flevoland/apps/?temp";
+  $apps = json_decode(file_get_contents($appsUri), true);
 ?>
 <!doctype html>
 <html lang="en">
@@ -37,6 +38,8 @@
             <p>contact: <?php echo $app["contact"]; ?></p>
           </div>
 <?php } ?>
+        <h1>Meta data</h1>
+        <a href="<?php echo $appsUri; ?>">Apps meta data in json formaat</a>
         </div>
       </div>
     </main>
