@@ -1,5 +1,7 @@
 <?php
   $bruggen_en_sluizen = json_decode(file_get_contents("https://www.dataservicepunt.nl/flevoland/data/bruggen_en_sluizen/bruggen_en_sluizen.geojson"), true);
+  $navHtml = file_get_contents("https://www.dataservicepunt.nl/flevoland/partial_nav.html");
+  $footerHtml = file_get_contents("https://www.dataservicepunt.nl/flevoland/partial_footer.html");
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,15 +14,8 @@
     <title>Aanmelden</title>
   </head>
   <body>
-    <nav>
-      <div class="wrapper">
-        <a href="https://www.dataservicepunt.nl/flevoland/">Data&nbsp;Servicepunt&nbsp;Flevoland</a> |
-        <a href="http://apis.dataservicepunt.nl/">Data&nbsp;marts</a> |
-        <a href="http://apis.dataservicepunt.nl/">Data&nbsp;services&nbsp;(API's)</a> |
-        <a href="http://apps.dataservicepunt.nl/">Apps</a> |
-        <a href="mailto:flevoland@dataservicepunt.nl">flevoland@dataservicepunt.nl</a>
-      </div>
-    </nav>
+
+    <?php echo $navHtml; ?>
 
     <header>
       <div class="wrapper">
@@ -56,19 +51,7 @@
       </div>
     </main>
 
-    <footer>
-      <div class="wrapper">
-        <div style="display: flex">
-          <div style="width: 150px">
-            <img src="https://www.dataservicepunt.nl/flevoland/img/Logo-provincie-Flevoland.png?width=61&amp;height=83" alt="Logo Provincie Flevoland">
-          </div>
-          <div style="flex: auto">
-            <h2>Meer informatie en contact</h2>
-            <p><a href="mailto:flevoland@dataservicepunt.nl">flevoland@dataservicepunt.nl</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <?php echo $footerHtml; ?>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
