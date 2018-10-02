@@ -1,5 +1,5 @@
 <?php
-  $apps = json_decode(file_get_contents("http://www.dataservicepunt.nl/flevoland/apps/?temp"), true);
+  $data = json_decode(file_get_contents("http://www.dataservicepunt.nl/flevoland/data/?temp"), true);
 ?>
 <!doctype html>
 <html lang="en">
@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://www.dataservicepunt.nl/flevoland/css/style.css">
-    <title>Apps</title>
+    <title>Data marts en data services (API's)</title>
   </head>
   <body>
     <nav>
@@ -30,11 +30,19 @@
     <main>
       <div class="wrapper" style="padding-top: 8rem">
         <div class="content" style="max-width: 40rem; background: white; padding: 1rem; margin: auto;">
-          <h1>Apps</h1>
-<?php foreach ($apps["apps"] as $app) { ?>
-          <div class="app">
-            <h2 style="max-width: 20em"><a href="<?php echo $app["uri"]; ?>"><?php echo $app["naam"]; ?></a></h2>
-            <p>contact: <?php echo $app["contact"]; ?></p>
+          <h1>data marts</h1>
+<?php foreach ($data["datamarts"] as $datamart) { ?>
+          <div class="datamart">
+            <h2 style="max-width: 20em"><a href="<?php echo $datamart["uri"]; ?>"><?php echo $datamart["naam"]; ?></a></h2>
+            <p>contact: <?php echo $datamart["contact"]; ?></p>
+          </div>
+<?php } ?>
+          <h1>data services (API's)</h1>
+<?php foreach ($data["dataservices"] as $dataservices) { ?>
+          <div class="dataservice">
+            <h2 style="max-width: 20em"><a href="<?php echo $dataservices["uri"]; ?>"><?php echo $dataservices["naam"]; ?></a></h2>
+            <p>documentatie: <a href="<?php echo $dataservices["documentatie"]; ?>">swagger</a></p>
+            <p>contact: <?php echo $dataservices["contact"]; ?></p>
           </div>
 <?php } ?>
         </div>
