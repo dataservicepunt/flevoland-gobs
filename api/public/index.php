@@ -1,6 +1,6 @@
 <?php
   $dataUri = "http://www.dataservicepunt.nl/flevoland/data/?temp";
-  $data = json_decode(file_get_contents($dataUrl), true);
+  $data = json_decode(file_get_contents($dataUri), true);
 ?>
 <!doctype html>
 <html lang="en">
@@ -46,8 +46,8 @@
             <p>contact: <?php echo $dataservices["contact"]; ?></p>
           </div>
 <?php } ?>
-        <h1>Meta data</h1>
-        <a href="<?php echo $dataUri; ?>">Data marts en data services (API's) meta data in json formaat</a>
+          <h1>Meta data</h1>
+          <a href="<?php echo $dataUri; ?>">Data marts en data services (API's) meta data in json formaat</a>
         </div>
       </div>
     </main>

@@ -38,8 +38,8 @@
             <p>contact: <?php echo $app["contact"]; ?></p>
           </div>
 <?php } ?>
-        <h1>Meta data</h1>
-        <a href="<?php echo $appsUri; ?>">Apps meta data in json formaat</a>
+          <h1>Meta data</h1>
+          <a href="<?php echo $appsUri; ?>">Apps meta data in json formaat</a>
         </div>
       </div>
     </main>
