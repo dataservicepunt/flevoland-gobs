@@ -28,81 +28,457 @@
     "KaB": "Kampersluis Ophaalbrug"
   },
   "wegen": {
-    "Markerwaarddijk": "N307",
-    "Houtribweg": "N307",
-    "Biddingringweg": "N305",
-    "Hanzeweg": " ",
-    "Dronterweg": "N307",
-    "Dronterringweg": "N307",
-    "Overijsselseweg": "N307",
-    "Kamperhoekweg": "N711",
-    "Kuinderweg": "N351",
-    "Vollenhoverweg": "N331",
-    "Marknesserweg": " ",
-    "Wrakkenweg": "N712",
-    "Steenwijkerweg": "N333",
-    "Oosterringweg": "N715",
-    "Banterweg": "N718",
-    "Noorderringweg": "N715",
-    "Westerringweg": "N712",
-    "Espelerweg": "N714",
-    "Espelerringweg": "N712",
-    "Zuidwesterringweg": "N713",
-    "Hannie Schaftweg": "N717",
-    "Urkerweg": "N351",
-    "Domineesweg": "N352",
-    "Leemringweg": "N719",
-    "Zuiderringweg": "N352",
-    "Lisdoddeweg": "N710",
-    "Larserweg": "N302",
-    "Swifterweg": "N710",
-    "Oldebroekerweg": "N709",
-    "Elburgerweg": "N309",
-    "Harderbosweg": "N306",
-    "Ganzenweg": "N302",
-    "Gooiseweg": "N305",
-    "Spiekweg": "N705",
-    "Vogelweg": "N706",
-    "Oostvaardersdijk": "N701",
-    "Hogering": "N702",
-    "Tussenring": "S104",
-    "Nijkerkseweg": "N301",
-    "Eemmeerdijk": "N704",
-    "Roerdompweg": "N705",
-    "Ploegstraat": "N716",
-    "Kamperweg": " ",
-    "Passage": "N307",
-    "Bremerbergweg": "N708",
-    "Swifterringweg": " ",
-    "Larserpad": " ",
-    "Drontermeerdijk": "N306",
-    "Knardijk": "N707",
-    "Spijkweg": "N306",
-    "Zeewolderdijk": "N707",
-    "Buitenring": "N702",
-    "Waterlandseweg": "N305",
-    "Enser rondweg": " ",
-    "Biddingweg": "N710",
-    "Slingerweg": "N704",
-    "Gooimeerdijk-Oost": "N704",
-    "Schollevaarweg": "N705",
-    "Gemaalweg": "N712",
-    "Venelaan": "N712",
-    "Repelweg": "N352",
-    "Kraggenburgerweg": "N352",
-    "Kadoelerweg": "N352",
-    "Baan": "N352",
-    "Oostereind": "N352",
-    "Muntweg": "N714",
-    "Staartweg": "N712",
-    "Nagelerweg": "N716",
-    "Akkerstraat": "N716",
-    "Galamalaan": "N712",
-    "Schokkerringweg": "N352",
-    " ": " ",
-    "Biddingringpad": " ",
-    "Ganzenpad": " ",
-    "Futenpad": " ",
-    "Nijkerkerpad": " "
+    "provinciale_weg_1": {
+      "N_WEG": "N307",
+      "NAAM": "Markerwaarddijk"
+    },
+    "provinciale_weg_2": {
+      "N_WEG": "N307",
+      "NAAM": "Houtribweg"
+    },
+    "provinciale_weg_3": {
+      "N_WEG": "N305",
+      "NAAM": "Biddingringweg"
+    },
+    "provinciale_weg_4": {
+      "N_WEG": "N307",
+      "NAAM": "Houtribweg"
+    },
+    "provinciale_weg_5": {
+      "N_WEG": "N307",
+      "NAAM": "Hanzeweg"
+    },
+    "provinciale_weg_6": {
+      "N_WEG": "N307",
+      "NAAM": "Dronterweg"
+    },
+    "provinciale_weg_7": {
+      "N_WEG": "N307",
+      "NAAM": "Dronterweg"
+    },
+    "provinciale_weg_8": {
+      "N_WEG": "N307",
+      "NAAM": "Dronterringweg"
+    },
+    "provinciale_weg_9": {
+      "N_WEG": "N307",
+      "NAAM": "Overijsselseweg"
+    },
+    "provinciale_weg_11": {
+      "N_WEG": "N711",
+      "NAAM": "Kamperhoekweg"
+    },
+    "provinciale_weg_12": {
+      "N_WEG": "N305",
+      "NAAM": "Biddingringweg"
+    },
+    "provinciale_weg_13": {
+      "N_WEG": "N307",
+      "NAAM": "Dronterringweg"
+    },
+    "provinciale_weg_14": {
+      "N_WEG": "N351",
+      "NAAM": "Kuinderweg"
+    },
+    "provinciale_weg_15": {
+      "N_WEG": "N331",
+      "NAAM": "Vollenhoverweg"
+    },
+    "provinciale_weg_16": {
+      "N_WEG": "N331",
+      "NAAM": "Marknesserweg"
+    },
+    "provinciale_weg_17": {
+      "N_WEG": "N712",
+      "NAAM": "Wrakkenweg"
+    },
+    "provinciale_weg_18": {
+      "N_WEG": "N333",
+      "NAAM": "Steenwijkerweg"
+    },
+    "provinciale_weg_19": {
+      "N_WEG": "N715",
+      "NAAM": "Oosterringweg"
+    },
+    "provinciale_weg_20": {
+      "N_WEG": "N715",
+      "NAAM": "Oosterringweg"
+    },
+    "provinciale_weg_21": {
+      "N_WEG": "N718",
+      "NAAM": "Banterweg"
+    },
+    "provinciale_weg_22": {
+      "N_WEG": "N715",
+      "NAAM": "Noorderringweg"
+    },
+    "provinciale_weg_23": {
+      "N_WEG": "N712",
+      "NAAM": "Westerringweg"
+    },
+    "provinciale_weg_24": {
+      "N_WEG": "N714",
+      "NAAM": "Espelerweg"
+    },
+    "provinciale_weg_25": {
+      "N_WEG": "N712",
+      "NAAM": "Espelerringweg"
+    },
+    "provinciale_weg_26": {
+      "N_WEG": "N713",
+      "NAAM": "Zuidwesterringweg"
+    },
+    "provinciale_weg_27": {
+      "N_WEG": "N717",
+      "NAAM": "Hannie Schaftweg"
+    },
+    "provinciale_weg_28": {
+      "N_WEG": "N351",
+      "NAAM": "Urkerweg"
+    },
+    "provinciale_weg_29": {
+      "N_WEG": "N352",
+      "NAAM": "Domineesweg"
+    },
+    "provinciale_weg_30": {
+      "N_WEG": "N719",
+      "NAAM": "Leemringweg"
+    },
+    "provinciale_weg_31": {
+      "N_WEG": "N352",
+      "NAAM": "Zuiderringweg"
+    },
+    "provinciale_weg_32": {
+      "N_WEG": "N710",
+      "NAAM": "Lisdoddeweg"
+    },
+    "provinciale_weg_33": {
+      "N_WEG": "N302",
+      "NAAM": "Larserweg"
+    },
+    "provinciale_weg_34": {
+      "N_WEG": "N710",
+      "NAAM": "Swifterweg"
+    },
+    "provinciale_weg_35": {
+      "N_WEG": "N709",
+      "NAAM": "Oldebroekerweg"
+    },
+    "provinciale_weg_36": {
+      "N_WEG": "N309",
+      "NAAM": "Elburgerweg"
+    },
+    "provinciale_weg_37": {
+      "N_WEG": "N306",
+      "NAAM": "Harderbosweg"
+    },
+    "provinciale_weg_38": {
+      "N_WEG": "N302",
+      "NAAM": "Ganzenweg"
+    },
+    "provinciale_weg_39": {
+      "N_WEG": "N305",
+      "NAAM": "Gooiseweg"
+    },
+    "provinciale_weg_40": {
+      "N_WEG": "N705",
+      "NAAM": "Spiekweg"
+    },
+    "provinciale_weg_41": {
+      "N_WEG": "N706",
+      "NAAM": "Vogelweg"
+    },
+    "provinciale_weg_42": {
+      "N_WEG": "N701",
+      "NAAM": "Oostvaardersdijk"
+    },
+    "provinciale_weg_43": {
+      "N_WEG": "N702",
+      "NAAM": "Hogering"
+    },
+    "provinciale_weg_44": {
+      "N_WEG": "S104",
+      "NAAM": "Tussenring"
+    },
+    "provinciale_weg_45": {
+      "N_WEG": "N301",
+      "NAAM": "Nijkerkseweg"
+    },
+    "provinciale_weg_46": {
+      "N_WEG": "N704",
+      "NAAM": "Eemmeerdijk"
+    },
+    "provinciale_weg_47": {
+      "N_WEG": "N705",
+      "NAAM": "Roerdompweg"
+    },
+    "provinciale_weg_48": {
+      "N_WEG": "N716",
+      "NAAM": "Ploegstraat"
+    },
+    "provinciale_weg_49": {
+      "N_WEG": " ",
+      "NAAM": "Kamperweg"
+    },
+    "provinciale_weg_67": {
+      "N_WEG": "N307",
+      "NAAM": "Passage"
+    },
+    "provinciale_weg_68": {
+      "N_WEG": "N708",
+      "NAAM": "Bremerbergweg"
+    },
+    "provinciale_weg_70": {
+      "N_WEG": " ",
+      "NAAM": "Swifterringweg"
+    },
+    "provinciale_weg_72": {
+      "N_WEG": " ",
+      "NAAM": "Larserpad"
+    },
+    "provinciale_weg_74": {
+      "N_WEG": "N302",
+      "NAAM": "Houtribweg"
+    },
+    "provinciale_weg_78": {
+      "N_WEG": "N307",
+      "NAAM": "Dronterringweg"
+    },
+    "provinciale_weg_79": {
+      "N_WEG": "N306",
+      "NAAM": "Drontermeerdijk"
+    },
+    "provinciale_weg_80": {
+      "N_WEG": "N707",
+      "NAAM": "Knardijk"
+    },
+    "provinciale_weg_81": {
+      "N_WEG": "N305",
+      "NAAM": "Gooiseweg"
+    },
+    "provinciale_weg_82": {
+      "N_WEG": "N305",
+      "NAAM": "Biddingringweg"
+    },
+    "provinciale_weg_83": {
+      "N_WEG": "N306",
+      "NAAM": "Spijkweg"
+    },
+    "provinciale_weg_84": {
+      "N_WEG": "N707",
+      "NAAM": "Zeewolderdijk"
+    },
+    "provinciale_weg_85": {
+      "N_WEG": "N702",
+      "NAAM": "Buitenring"
+    },
+    "provinciale_weg_86": {
+      "N_WEG": "N307",
+      "NAAM": "Houtribweg"
+    },
+    "provinciale_weg_87": {
+      "N_WEG": "N305",
+      "NAAM": "Waterlandseweg"
+    },
+    "provinciale_weg_88": {
+      "N_WEG": "N305",
+      "NAAM": "Gooiseweg"
+    },
+    "provinciale_weg_89": {
+      "N_WEG": "N305",
+      "NAAM": "Gooiseweg"
+    },
+    "provinciale_weg_90": {
+      "N_WEG": " ",
+      "NAAM": "Enser rondweg"
+    },
+    "provinciale_weg_91": {
+      "N_WEG": "N710",
+      "NAAM": "Biddingweg"
+    },
+    "provinciale_weg_92": {
+      "N_WEG": "N704",
+      "NAAM": "Slingerweg"
+    },
+    "provinciale_weg_93": {
+      "N_WEG": "N704",
+      "NAAM": "Gooimeerdijk-Oost"
+    },
+    "provinciale_weg_94": {
+      "N_WEG": "N705",
+      "NAAM": "Spiekweg"
+    },
+    "provinciale_weg_95": {
+      "N_WEG": "N705",
+      "NAAM": "Schollevaarweg"
+    },
+    "provinciale_weg_97": {
+      "N_WEG": "N712",
+      "NAAM": "Gemaalweg"
+    },
+    "provinciale_weg_98": {
+      "N_WEG": "N712",
+      "NAAM": "Venelaan"
+    },
+    "provinciale_weg_100": {
+      "N_WEG": "N331",
+      "NAAM": "Marknesserweg"
+    },
+    "provinciale_weg_101": {
+      "N_WEG": "N352",
+      "NAAM": "Repelweg"
+    },
+    "provinciale_weg_102": {
+      "N_WEG": "N352",
+      "NAAM": "Kraggenburgerweg"
+    },
+    "provinciale_weg_103": {
+      "N_WEG": "N352",
+      "NAAM": "Kadoelerweg"
+    },
+    "provinciale_weg_104": {
+      "N_WEG": "N351",
+      "NAAM": "Kuinderweg"
+    },
+    "provinciale_weg_105": {
+      "N_WEG": "N352",
+      "NAAM": "Baan"
+    },
+    "provinciale_weg_106": {
+      "N_WEG": "N352",
+      "NAAM": "Oostereind"
+    },
+    "provinciale_weg_107": {
+      "N_WEG": "N715",
+      "NAAM": "Noorderringweg"
+    },
+    "provinciale_weg_108": {
+      "N_WEG": "N714",
+      "NAAM": "Muntweg"
+    },
+    "provinciale_weg_109": {
+      "N_WEG": "N712",
+      "NAAM": "Staartweg"
+    },
+    "provinciale_weg_110": {
+      "N_WEG": "N716",
+      "NAAM": "Nagelerweg"
+    },
+    "provinciale_weg_111": {
+      "N_WEG": "N716",
+      "NAAM": "Akkerstraat"
+    },
+    "provinciale_weg_112": {
+      "N_WEG": "N712",
+      "NAAM": "Galamalaan"
+    },
+    "provinciale_weg_113": {
+      "N_WEG": "N352",
+      "NAAM": "Schokkerringweg"
+    },
+    "provinciale_weg_114": {
+      "N_WEG": "N305",
+      "NAAM": "Biddingringweg"
+    },
+    "provinciale_weg_115": {
+      "N_WEG": "N307",
+      "NAAM": "Dronterweg"
+    },
+    "provinciale_weg_116": {
+      "N_WEG": "N309",
+      "NAAM": "Elburgerweg"
+    },
+    "provinciale_weg_117": {
+      "N_WEG": "N714",
+      "NAAM": "Espelerweg"
+    },
+    "provinciale_weg_118": {
+      "N_WEG": "N302",
+      "NAAM": "Ganzenweg"
+    },
+    "provinciale_weg_119": {
+      "N_WEG": "N305",
+      "NAAM": "Gooiseweg"
+    },
+    "provinciale_weg_120": {
+      "N_WEG": "N717",
+      "NAAM": "Hannie Schaftweg"
+    },
+    "provinciale_weg_121": {
+      "N_WEG": "N307",
+      "NAAM": "Hanzeweg"
+    },
+    "provinciale_weg_122": {
+      "N_WEG": " ",
+      "NAAM": "Kamperweg"
+    },
+    "provinciale_weg_123": {
+      "N_WEG": "N351",
+      "NAAM": "Kuinderweg"
+    },
+    "provinciale_weg_124": {
+      "N_WEG": "N351",
+      "NAAM": "Kuinderweg"
+    },
+    "provinciale_weg_125": {
+      "N_WEG": " ",
+      "NAAM": "Larserpad"
+    },
+    "provinciale_weg_126": {
+      "N_WEG": "N302",
+      "NAAM": "Larserweg"
+    },
+    "provinciale_weg_127": {
+      "N_WEG": "N716",
+      "NAAM": "Nagelerweg"
+    },
+    "provinciale_weg_128": {
+      "N_WEG": "N301",
+      "NAAM": "Nijkerkseweg"
+    },
+    "provinciale_weg_129": {
+      "N_WEG": "N705",
+      "NAAM": "Spiekweg"
+    },
+    "provinciale_weg_130": {
+      "N_WEG": "N351",
+      "NAAM": "Urkerweg"
+    },
+    "provinciale_weg_131": {
+      "N_WEG": "N713",
+      "NAAM": "Zuidwesterringweg"
+    },
+    "provinciale_weg_132": {
+      "N_WEG": "N706",
+      "NAAM": "Vogelweg"
+    },
+    "provinciale_weg_133": {
+      "N_WEG": "N706",
+      "NAAM": "Vogelweg"
+    },
+    "provinciale_weg_134": {
+      "N_WEG": "N331",
+      "NAAM": "Vollenhoverweg"
+    },
+    "provinciale_weg_135": {
+      "N_WEG": "N305",
+      "NAAM": "Waterlandseweg"
+    },
+    "provinciale_weg_136": {
+      "N_WEG": "N309",
+      "NAAM": "Elburgerweg"
+    },
+    "provinciale_weg_137": {
+      "N_WEG": " ",
+      "NAAM": "Larserpad"
+    },
+    "provinciale_weg_138": {
+      "N_WEG": " ",
+      "NAAM": "Larserpad"
+    },
+    "provinciale_weg_0": {
+      "N_WEG": " ",
+      "NAAM": "Nijkerkerpad"
+    }
   }
 }

@@ -3,7 +3,7 @@
     if (!empty(trim($feature["properties"]["N_WEG"]))) {
 ?>
   <label>
-    <input type="checkbox" name="objecten[]" value="<?php echo $feature["properties"]["N_WEG"]; ?>">
+    <input type="checkbox" name="objecten[]" value="provinciale_weg_<?php echo $feature["properties"]["OBJECTID"]; ?>">
     <?php echo $feature["properties"]["NAAM"]; ?> (<?php echo $feature["properties"]["N_WEG"]; ?>)
   </label>
   <br>

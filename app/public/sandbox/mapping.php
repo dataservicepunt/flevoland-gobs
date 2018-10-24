@@ -20,7 +20,10 @@ $json = file_get_contents("https://www.dataservicepunt.nl/flevoland/data/provinc
 $data = json_decode($json, true);
 
 foreach ($data["features"] as $feature) {
-  $rs["wegen"][$feature["properties"]["NAAM"]] = $feature["properties"]["N_WEG"];
+  $rs["wegen"]["provinciale_weg_" . $feature["properties"]["OBJECTID"]] = [
+    "N_WEG" => $feature["properties"]["N_WEG"],
+    "NAAM" => $feature["properties"]["NAAM"]
+  ];
 }
 
 header("Content-type: application/json");
