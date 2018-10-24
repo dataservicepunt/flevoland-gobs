@@ -33,6 +33,7 @@ button {
   border: 0;
   font-size: 28px;
   line-height: 1.8em;
+  cursor: pointer;
 }
 input[type=text] {
   font-size: 1.4em;
