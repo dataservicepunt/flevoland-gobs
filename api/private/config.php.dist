@@ -1,8 +1,8 @@
 <?php
 
 $config = [
-  "subscriptionsFilePath" => "<subscriptionsFilePath>",
-  "notificationsLogFilePath" => "<notificationsLogFilePath>",
+  "subscriptionsFilePath" => __DIR__ . "/subscriptions.json",
+  "notificationsLogFilePath" => __DIR__ . "/notificationsLog.json",
   "apiUrl" => "<apiUrl>",
   "accessToken" => "<accessToken>",
   "originator" => "<originator>",
