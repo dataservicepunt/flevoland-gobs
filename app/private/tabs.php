@@ -21,12 +21,12 @@
   <div data-tab-id="bruggen" style="display: none">
     <p class="spaced">
       <p class="spaced">
-<?php include("../../private/bruggen_en_sluizen_checkboxes.php"); ?>
+<?php include("../../private/bruggen_checkboxes.php"); ?>
     </p>
   </div>
   <div data-tab-id="sluizen" style="display: none">
     <p class="spaced">
-<?php include("../../private/bruggen_en_sluizen_checkboxes.php"); ?>
+<?php include("../../private/sluizen_checkboxes.php"); ?>
     </p>
   </div>
 </div>

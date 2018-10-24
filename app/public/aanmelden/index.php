@@ -33,7 +33,7 @@
               </p>
               <p style="background: #eee; text-align: center;">
                 <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Telefoon@2x.png">
-                <input type="text" id="telefoonnummer" name="telefoonnummer" placeholder="Telefoonnummer" value="06-">
+                <input type="text" id="telefoonnummer" name="telefoonnummer" placeholder="Telefoonnummer" value="06 - ">
               </p>
               <p><button>VERSTUUR</button></p>
             </fieldset>
