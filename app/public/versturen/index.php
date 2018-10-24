@@ -1,26 +1,13 @@
 <?php
-  $bruggen_en_sluizen = json_decode(file_get_contents("https://www.dataservicepunt.nl/flevoland/data/bruggen_en_sluizen/bruggen_en_sluizen.geojson"), true);
-  $navHtml = file_get_contents("https://www.dataservicepunt.nl/flevoland/partial_nav.html");
-  $footerHtml = file_get_contents("https://www.dataservicepunt.nl/flevoland/partial_footer.html");
+  include("../../private/load.php");
 ?>
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.dataservicepunt.nl/flevoland/css/style.css">
-    <title>Notificatie versturen</title>
-    <style>
-      textarea {
-        width: 100%;
-        min-height: 100px
-      }
-    </style>
-  </head>
+  <?php
+    $title = "Notificatie versturen";
+    include("../../private/head.php");
+  ?>
   <body>
-
     <?php echo $navHtml; ?>
 
     <header>
@@ -41,15 +28,9 @@
                 <textarea id="notificatie" name="notificatie" placeholder="Notificatie"></textarea>
               </p>
               <p>Selecteer de bruggen en sluizen waarop deze notificatie betrekking heeft:</p>
-              <p>
-<?php foreach ($bruggen_en_sluizen["features"] as $feature) { ?>
-                <label>
-                  <input type="checkbox" name="objecten[]" value="<?php echo $feature["properties"]["nummer"]; ?>">
-                  <?php echo $feature["properties"]["naam"]; ?>
-                </label>
-                <br>
-<?php } ?>
-              </p>
+<?php
+  include("../../private/tabs.php");
+?>
               <p><button>Notificatie versturen</button></p>
             </fieldset>
           </form>
