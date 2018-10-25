@@ -33,10 +33,10 @@
   include("../../private/tabs.php");
 ?>
               <p style="background: #eee; text-align: center;">
-                <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Telefoon@2x.png">
-                <input type="text" id="token" name="token" placeholder="Token">
+                <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Slot@2x.png">
+                <input type="text" id="token" name="token" placeholder="Wachtwoord">
               </p>
-              <p><button>Notificatie versturen</button></p>
+              <p><button>NOTIFICATIES VERSTUREN</button></p>
             </fieldset>
           </form>
         </div>
