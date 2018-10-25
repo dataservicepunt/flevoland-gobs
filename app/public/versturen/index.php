@@ -1,4 +1,5 @@
 <?php
+  include("../../private/config.php");
   include("../../private/load.php");
 ?>
 <!doctype html>
@@ -44,10 +45,6 @@
 
     <?php echo $footerHtml; ?>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
     <script>
       $("form").submit(function (e) {
         e.preventDefault();
@@ -64,7 +61,7 @@
             notificatie[field.name] = field.value;
           }
         });
-        var apiUrl = "http://apis.dataservicepunt.nl/notificaties/";
+        var apiUrl = "<?php echo $config["apiRoot"]; ?>/notificaties/";
         $.post(apiUrl, notificatie, function (response) {
           console.log(response);
           if (response.rs.errors) {
@@ -72,7 +69,11 @@
           } else {
             alert("notificatie verstuurd naar " + response.rs.recipients.totalCount + " telefoonnummer(s)");
           }
-        }, "json");
+        }, "json")
+         .fail(function (response) {
+           console.log(response);
+           alert(response.responseJSON.error);
+        });
       });
     </script>
   </body>

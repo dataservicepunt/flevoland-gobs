@@ -1,4 +1,5 @@
 <?php
+  include("../../private/config.php");
   include("../../private/load.php");
 ?>
 <!doctype html>
@@ -60,11 +61,15 @@
             aanmelding[field.name] = field.value;
           }
         });
-        var apiUrl = "http://apis.dataservicepunt.nl/aanmeldingen/";
+        var apiUrl = "<?php echo $config["apiRoot"]; ?>/aanmeldingen/";
         $.post(apiUrl, aanmelding, function (response) {
           console.log(response);
           alert("aanmelding geslaagd");
-        }, "json");
+        }, "json")
+         .fail(function (response) {
+          console.log(response);
+          alert(response.responseJSON.error);
+        });
       });
     </script>
   </body>
