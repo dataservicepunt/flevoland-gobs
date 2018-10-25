@@ -27,9 +27,8 @@ switch ($_SERVER["REQUEST_METHOD"]) {
     $request["smsText"] = $input["notificatie"];
     $request["smsLength"] = strlen($request["smsText"]);
     $request["objecten"] = $input["objecten"];
-    $request["token"] = $input["token"];
 
-    if (empty($request["token"]) || sha1($request["token"]) !== $config["users"]["default"]) {
+    if (empty($input["token"]) || sha1($input["token"]) !== $config["users"]["default"]) {
       header("HTTP/1.1 401 Unauthorized");
       $response = [
         "error" => "incorrecte token"
