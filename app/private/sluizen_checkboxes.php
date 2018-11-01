@@ -1,10 +1,11 @@
 <?php
-  foreach ($bruggen_en_sluizen["features"] as $feature) {
-    if (array_key_exists($feature["properties"]["nummer"], $mapping["sluizen"])) {
+  $sluizen = json_decode(file_get_contents(__DIR__ . "/mapping_from_specs/mapping_sluizen.json"), true);
+  foreach ($sluizen as $id => $sluis) {
+    if (!empty($sluis["communicatie_naam"])) {
 ?>
     <label>
-      <input type="checkbox" name="objecten[]" value="<?php echo $feature["properties"]["nummer"]; ?>">
-      <?php echo $mapping["sluizen"][$feature["properties"]["nummer"]]; ?>
+      <input type="checkbox" name="objecten[]" value="<?php echo $id; ?>">
+      <?php echo $sluis["communicatie_naam"]; ?>
     </label>
     <br>
 <?php

@@ -4,7 +4,7 @@ textarea {
 }
 .spaced {
   margin: 20px;
-  text-align: center;
+  /* text-align: center; */
 }
 .tab-button {
   flex: 1;

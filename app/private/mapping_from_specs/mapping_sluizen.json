@@ -1,0 +1,46 @@
+{
+  "MaS": {
+    "naam": "Marknessersluis",
+    "communicatie_naam": "Marknesse - Marknessersluis"
+  },
+  "KeS": {
+    "naam": "Ketelsluis",
+    "communicatie_naam": "Dronten - Ketelsluis"
+  },
+  "LaS": {
+    "naam": "Larsersluis",
+    "communicatie_naam": "Biddinghuizen - Larsersluis"
+  },
+  "ZuS": {
+    "naam": "Zuidersluis",
+    "communicatie_naam": "Almere - Zuidersluis"
+  },
+  "NoS": {
+    "naam": "Noordersluis",
+    "communicatie_naam": "Lelystad - Noordersluis"
+  },
+  "FrS": {
+    "naam": "Friesesluis",
+    "communicatie_naam": "Lemmer - Friese Sluis"
+  },
+  "UrS": {
+    "naam": "Urkersluis",
+    "communicatie_naam": "Urk - Urkersluis"
+  },
+  "VaS": {
+    "naam": "Vaartsluis",
+    "communicatie_naam": "Almere - Vaartsluis"
+  },
+  "KaS": {
+    "naam": "Kampersluis",
+    "communicatie_naam": "Dronten - Kampersluis"
+  },
+  "VoS": {
+    "naam": "Voorstersluis",
+    "communicatie_naam": "Kraggenburg - Voorstersluis"
+  },
+  "BdS": {
+    "naam": "Sluis de Blauwe Dromer",
+    "communicatie_naam": "Zeewolde - Sluis de Blauwe Dromer"
+  }
+}

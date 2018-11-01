@@ -1,12 +1,13 @@
 <?php
-  foreach ($bruggen_en_sluizen["features"] as $feature) {
-    if (array_key_exists($feature["properties"]["nummer"], $mapping["bruggen"])) {
+  $bruggen = json_decode(file_get_contents(__DIR__ . "/mapping_from_specs/mapping_bruggen.json"), true);
+  foreach ($bruggen as $id => $brug) {
+    if (!empty($brug["communicatie_naam"])) {
 ?>
     <label>
-      <input type="checkbox" name="objecten[]" value="<?php echo $feature["properties"]["nummer"]; ?>">
-      <?php echo $mapping["bruggen"][$feature["properties"]["nummer"]]; ?>
+      <input type="checkbox" name="objecten[]" value="<?php echo $id; ?>">
+      <?php echo $brug["communicatie_naam"]; ?>
     </label>
     <br>
 <?php
     } // if
-  } //foreach
+  } // foreach

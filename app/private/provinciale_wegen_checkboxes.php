@@ -1,10 +1,11 @@
 <?php
-  foreach ($provinciale_wegen["features"] as $feature) {
-    if (!empty(trim($feature["properties"]["N_WEG"]))) {
+  $wegen = json_decode(file_get_contents(__DIR__ . "/mapping_from_specs/mapping_wegen.json"), true);
+  foreach ($wegen as $id => $weg) {
+    if (!empty($weg["communicatie_naam"])) {
 ?>
   <label>
-    <input type="checkbox" name="objecten[]" value="provinciale_weg_<?php echo $feature["properties"]["OBJECTID"]; ?>">
-    <?php echo $feature["properties"]["NAAM"]; ?> (<?php echo $feature["properties"]["N_WEG"]; ?>)
+    <input type="checkbox" name="objecten[]" value="provinciale_weg_<?php echo $id; ?>">
+    <?php echo $weg["communicatie_naam"]; ?>
   </label>
   <br>
 <?php
