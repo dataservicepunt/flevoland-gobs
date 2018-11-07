@@ -5,6 +5,9 @@ ini_set('display_errors', 1);
 
 $cdnRoot = "https://www.dataservicepunt.nl/flevoland";
 
+$navHtml = file_get_contents("{$cdnRoot}/partial_nav.html");
+$footerHtml = file_get_contents("{$cdnRoot}/partial_footer.html");
+
 //$provinciale_wegen_url = "{$cdnRoot}/data/provinciale_wegen/provinciale_wegen.geojson";
 //$provinciale_wegen = json_decode(file_get_contents($provinciale_wegen_url), true);
 //usort($provinciale_wegen["features"], function ($a, $b) {
@@ -16,8 +19,5 @@ $cdnRoot = "https://www.dataservicepunt.nl/flevoland";
 //usort($bruggen_en_sluizen["features"], function ($a, $b) {
 //  return $a["properties"]["naam"] > $b["properties"]["naam"];
 //});
-
-$navHtml = file_get_contents("{$cdnRoot}/partial_nav.html");
-$footerHtml = file_get_contents("{$cdnRoot}/partial_footer.html");
 
 //$mapping = json_decode(file_get_contents("../../private/mapping.json"), true);
