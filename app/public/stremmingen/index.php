@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
   <?php
-    $title = "Notificatie versturen";
+    $title = "Stremmingen";
     include("../../private/head.php");
   ?>
   <body>
@@ -22,22 +22,17 @@
         <div class="content" style="max-width: 40rem; background: white; padding: 1rem; margin: auto;">
           <form method="POST">
             <fieldset>
-              <legend>Notificatie versturen</legend>
-              <p>Vul onderstaand formulier in om een notificatie te versturen in het kader van de beschikbaarheid van bruggen en sluizen.</p>
-              <p>
-                <label for="notificatie">Vul de notificatie in die u wilt versturen:</label><br>
-                <textarea id="notificatie" name="notificatie" placeholder="Notificatie"></textarea>
-              </p>
-              <p>Selecteer de bruggen en sluizen waarop deze notificatie betrekking heeft:</p>
+              <legend>Stremmingen</legend>
+              <p>Geen in onderstaand overzicht de actuele status van stremmingen bruggen en sluizen aan.</p>
 <?php
-  include("../../private/tabs_checkboxes.php");
+  include("../../private/tabs_stremmingen.php");
 ?>
               <p style="background: #eee; text-align: center;">
                 <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Slot@2x.png">
                 <input type="text" id="username" name="username" placeholder="Gebruikersnaam">
                 <input type="password" id="password" name="password" placeholder="Wachtwoord">
               </p>
-              <p><button>NOTIFICATIES VERSTUREN</button></p>
+              <p><button>STREMMINGSSTATUS PUBLICEREN</button></p>
             </fieldset>
           </form>
         </div>

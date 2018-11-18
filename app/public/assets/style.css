@@ -35,8 +35,12 @@ button {
   line-height: 1.8em;
   cursor: pointer;
 }
-input[type=text] {
+input[type=text],
+input[type=password] {
   font-size: 1.4em;
   margin: 0.4em;
   padding: 0.4em;
+}
+input[name="password"] {
+  margin-left: 60px;
 }
