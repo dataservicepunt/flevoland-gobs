@@ -58,7 +58,7 @@ switch ($_SERVER["REQUEST_METHOD"]) {
     }
 
     if (empty($input["password"]) ||
-        hash($userConfig["hashAlgorithm"], $input["password"]) !== $userConfig["passwordHash"]) {
+        hash($userConfig["hashAlgorithm"], $input["password"]) !== strtolower($userConfig["passwordHash"])) {
       header("HTTP/1.1 401 Unauthorized");
       $response = [
         "error" => "incorrecte gebruikersnaam en/of wachtwoord"
