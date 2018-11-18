@@ -4,7 +4,7 @@
     if (!empty($weg["communicatie_naam"])) {
 ?>
   <label>
-    <!-- <input type="checkbox" class="switch" name="objecten[]" value="provinciale_weg_<?php echo $id; ?>"> -->
+    <!-- <input type="checkbox" class="switch" name="objecten[]" value="<?php echo $id; ?>"> -->
     <img class="switch" src="../assets/switch_geen_stremming.png" style="width: 60px;">
     <?php echo $weg["communicatie_naam"]; ?>
   </label>

@@ -5,7 +5,12 @@
 ?>
     <label>
       <input type="checkbox" name="objecten[]" value="<?php echo $id; ?>">
-      <?php echo $brug["communicatie_naam"]; ?>
+      <?php
+        echo $brug["communicatie_naam"];
+        if (!empty($includeStats) && !empty($stats["objecten"][$id])) {
+          echo " ({$stats["objecten"][$id]})";
+        }
+      ?>
     </label>
     <br>
 <?php

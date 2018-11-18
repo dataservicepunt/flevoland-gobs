@@ -1,4 +1,5 @@
 <?php
+  $includeStats = true;
   include("../../private/config.php");
   include("../../private/load.php");
 ?>

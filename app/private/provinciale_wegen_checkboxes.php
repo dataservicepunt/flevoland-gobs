@@ -4,8 +4,13 @@
     if (!empty($weg["communicatie_naam"])) {
 ?>
   <label>
-    <input type="checkbox" name="objecten[]" value="provinciale_weg_<?php echo $id; ?>">
-    <?php echo $weg["communicatie_naam"]; ?>
+    <input type="checkbox" name="objecten[]" value="<?php echo $id; ?>">
+    <?php
+      echo $weg["communicatie_naam"];
+      if (!empty($includeStats) && !empty($stats["objecten"][$id])) {
+        echo " ({$stats["objecten"][$id]})";
+      }
+    ?>
   </label>
   <br>
 <?php

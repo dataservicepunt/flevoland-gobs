@@ -13,6 +13,20 @@ $request = [
 ];
 
 switch ($_SERVER["REQUEST_METHOD"]) {
+  case "GET":
+    if (!file_exists($config["subscriptionsFilePath"])) {
+      copy("{$config["subscriptionsFilePath"]}.dist", $config["subscriptionsFilePath"]);
+    }
+    $subscriptions = json_decode(file_get_contents($config["subscriptionsFilePath"]), true);
+    foreach ($subscriptions["subscriptions"] as $telefoonnummer => $objecten) {
+      foreach ($objecten as $object) {
+        $request["objecten"][$object]++;
+      }
+    }
+    
+    break;
+  // ---------------------------------------------------------------------------
+
   case "POST":
     if ($input = $_POST) {
       // void
@@ -46,6 +60,7 @@ switch ($_SERVER["REQUEST_METHOD"]) {
     file_put_contents($config["subscriptionsFilePath"], json_encode($subscriptions));
 
     break;
+  // ---------------------------------------------------------------------------
 }
 
 die(json_encode($request));
