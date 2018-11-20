@@ -23,7 +23,7 @@ switch ($_SERVER["REQUEST_METHOD"]) {
         $request["objecten"][$object]++;
       }
     }
-    
+
     break;
   // ---------------------------------------------------------------------------
 
@@ -51,6 +51,15 @@ switch ($_SERVER["REQUEST_METHOD"]) {
     }
 
     $request["objecten"] = $input["objecten"];
+
+    // log the subscription
+    if (!file_exists($config["subscriptionsLogFilePath"])) {
+      copy("{$config["subscriptionsLogFilePath"]}.dist", $config["subscriptionsLogFilePath"]);
+    }
+    $subscriptionsLog = json_decode(file_get_contents($config["subscriptionsLogFilePath"]), true);
+    $subscriptionsLog["subscriptions"][] = $request;
+    file_put_contents($config["subscriptionsLogFilePath"], json_encode($subscriptionsLog));
+    mail($config["emailAddress"], "aan- of afmelding SMS service", print_r($request, true));
 
     if (!file_exists($config["subscriptionsFilePath"])) {
       copy("{$config["subscriptionsFilePath"]}.dist", $config["subscriptionsFilePath"]);
