@@ -1,0 +1,46 @@
+textarea {
+  width: 100%;
+  min-height: 100px
+}
+.spaced {
+  margin: 20px;
+  /* text-align: center; */
+}
+.tab-button {
+  flex: 1;
+  color: #005FAA;
+  text-align: center;
+  padding: 0 1em;
+  background: #005FAA05;
+  cursor: pointer;
+}
+.tab-button.active {
+  background: #005FAA1A;
+}
+.tab-button:not(:last-child) {
+  border-right: 1px solid #005FAA;
+}
+.tab-button:active {
+  background: #0060AD10;
+}
+.tab-button p {
+  line-height: 0;
+}
+button {
+  background: #005FAA;
+  color: #FFF;
+  width: 100%;
+  border: 0;
+  font-size: 28px;
+  line-height: 1.8em;
+  cursor: pointer;
+}
+input[type=text],
+input[type=password] {
+  font-size: 1.4em;
+  margin: 0.4em;
+  padding: 0.4em;
+}
+input[name="password"] {
+  margin-left: 60px;
+}

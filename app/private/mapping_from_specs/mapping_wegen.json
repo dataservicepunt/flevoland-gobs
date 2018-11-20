@@ -1,0 +1,680 @@
+{
+  "provinciale_weg_1": {
+    "N_WEG": "N307",
+    "naam": "Markerwaarddijk",
+    "communicatie_naam": "N307 Markerwaarddijk",
+    "regio": "OF"
+  },
+  "provinciale_weg_2": {
+    "N_WEG": "N307",
+    "naam": "Houtribweg",
+    "communicatie_naam": "N307 Houtribweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_3": {
+    "N_WEG": "N305",
+    "naam": "Biddingringweg",
+    "communicatie_naam": "N305 Biddingringweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_4": {
+    "N_WEG": "N307",
+    "naam": "Houtribweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_5": {
+    "N_WEG": "N307",
+    "naam": "Hanzeweg",
+    "communicatie_naam": "N307 Hanzeweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_6": {
+    "N_WEG": "N307",
+    "naam": "Dronterweg",
+    "communicatie_naam": "N307 Dronterweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_7": {
+    "N_WEG": "N307",
+    "naam": "Dronterweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_8": {
+    "N_WEG": "N307",
+    "naam": "Dronterringweg",
+    "communicatie_naam": "N307 Dronterringweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_9": {
+    "N_WEG": "N307",
+    "naam": "Overijsselseweg",
+    "communicatie_naam": "N307 Overijsselseweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_11": {
+    "N_WEG": "N711",
+    "naam": "Kamperhoekweg",
+    "communicatie_naam": "N711 Kamperhoekweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_12": {
+    "N_WEG": "N305",
+    "naam": "Biddingringweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_13": {
+    "N_WEG": "N307",
+    "naam": "Dronterringweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_14": {
+    "N_WEG": "N351",
+    "naam": "Kuinderweg",
+    "communicatie_naam": "N351 Kuinderweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_15": {
+    "N_WEG": "N331",
+    "naam": "Vollenhoverweg",
+    "communicatie_naam": "N331 Vollenhoverweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_16": {
+    "N_WEG": "N331",
+    "naam": "Marknesserweg",
+    "communicatie_naam": "N331 Marknesserweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_17": {
+    "N_WEG": "N712",
+    "naam": "Wrakkenweg",
+    "communicatie_naam": "N712 Wrakkenweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_18": {
+    "N_WEG": "N333",
+    "naam": "Steenwijkerweg",
+    "communicatie_naam": "N333 Steenwijkerweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_19": {
+    "N_WEG": "N715",
+    "naam": "Oosterringweg",
+    "communicatie_naam": "N715 Oosterringweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_20": {
+    "N_WEG": "N715",
+    "naam": "Oosterringweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_21": {
+    "N_WEG": "N718",
+    "naam": "Banterweg",
+    "communicatie_naam": "N718 Banterweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_22": {
+    "N_WEG": "N715",
+    "naam": "Noorderringweg",
+    "communicatie_naam": "N715 Noorderringweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_23": {
+    "N_WEG": "N712",
+    "naam": "Westerringweg",
+    "communicatie_naam": "N712 Westerringweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_24": {
+    "N_WEG": "N714",
+    "naam": "Espelerweg",
+    "communicatie_naam": "N714 Espelerweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_25": {
+    "N_WEG": "N712",
+    "naam": "Espelerringweg",
+    "communicatie_naam": "N712 Espelerringweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_26": {
+    "N_WEG": "N713",
+    "naam": "Zuidwesterringweg",
+    "communicatie_naam": "N713 Zuidwesterringweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_27": {
+    "N_WEG": "N717",
+    "naam": "Hannie Schaftweg",
+    "communicatie_naam": "N717 Hannie Schaftweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_28": {
+    "N_WEG": "N351",
+    "naam": "Urkerweg",
+    "communicatie_naam": "N351 Urkerweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_29": {
+    "N_WEG": "N352",
+    "naam": "Domineesweg",
+    "communicatie_naam": "N352 Domineesweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_30": {
+    "N_WEG": "N719",
+    "naam": "Leemringweg",
+    "communicatie_naam": "N719 Leemringweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_31": {
+    "N_WEG": "N352",
+    "naam": "Zuiderringweg",
+    "communicatie_naam": "N352 Zuiderringweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_32": {
+    "N_WEG": "N710",
+    "naam": "Lisdoddeweg",
+    "communicatie_naam": "N710 Lisdoddeweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_33": {
+    "N_WEG": "N302",
+    "naam": "Larserweg",
+    "communicatie_naam": "N302 Larserweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_34": {
+    "N_WEG": "N710",
+    "naam": "Swifterweg",
+    "communicatie_naam": "N710 Swifterweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_35": {
+    "N_WEG": "N709",
+    "naam": "Oldebroekerweg",
+    "communicatie_naam": "N709 Oldebroekerweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_36": {
+    "N_WEG": "N309",
+    "naam": "Elburgerweg",
+    "communicatie_naam": "N309 Elburgerweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_37": {
+    "N_WEG": "N306",
+    "naam": "Harderbosweg",
+    "communicatie_naam": "N306 Harderbosweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_38": {
+    "N_WEG": "N302",
+    "naam": "Ganzenweg",
+    "communicatie_naam": "N302 Ganzenweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_39": {
+    "N_WEG": "N305",
+    "naam": "Gooiseweg",
+    "communicatie_naam": "N305 Gooiseweg",
+    "regio": "ZF"
+  },
+  "provinciale_weg_40": {
+    "N_WEG": "N705",
+    "naam": "Spiekweg",
+    "communicatie_naam": "N705 Spiekweg",
+    "regio": "ZF"
+  },
+  "provinciale_weg_41": {
+    "N_WEG": "N706",
+    "naam": "Vogelweg",
+    "communicatie_naam": "N706 Vogelweg",
+    "regio": "ZF"
+  },
+  "provinciale_weg_42": {
+    "N_WEG": "N701",
+    "naam": "Oostvaardersdijk",
+    "communicatie_naam": "N701 Oostvaardersdijk",
+    "regio": "ZF"
+  },
+  "provinciale_weg_43": {
+    "N_WEG": "N702",
+    "naam": "Hogering",
+    "communicatie_naam": "N702 Hogering",
+    "regio": "ZF"
+  },
+  "provinciale_weg_44": {
+    "N_WEG": "S104",
+    "naam": "Tussenring",
+    "communicatie_naam": "S104,Tussenring",
+    "regio": "ZF"
+  },
+  "provinciale_weg_45": {
+    "N_WEG": "N301",
+    "naam": "Nijkerkseweg",
+    "communicatie_naam": "N301 Nijkerkseweg",
+    "regio": "ZF"
+  },
+  "provinciale_weg_46": {
+    "N_WEG": "N704",
+    "naam": "Eemmeerdijk",
+    "communicatie_naam": "N704 Eemmeerdijk",
+    "regio": "ZF"
+  },
+  "provinciale_weg_47": {
+    "N_WEG": "N705",
+    "naam": "Roerdompweg",
+    "communicatie_naam": "N705 Roerdompweg",
+    "regio": "ZF"
+  },
+  "provinciale_weg_48": {
+    "N_WEG": "N716",
+    "naam": "Ploegstraat",
+    "communicatie_naam": "N716 Ploegstraat",
+    "regio": "NOP"
+  },
+  "provinciale_weg_49": {
+    "N_WEG": "",
+    "naam": "Kamperweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_67": {
+    "N_WEG": "N307",
+    "naam": "Passage",
+    "communicatie_naam": "N307 Passage Dronten",
+    "regio": "OF"
+  },
+  "provinciale_weg_68": {
+    "N_WEG": "N708",
+    "naam": "Bremerbergweg",
+    "communicatie_naam": "N708 Bremerbergweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_70": {
+    "N_WEG": "",
+    "naam": "Swifterringweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_72": {
+    "N_WEG": "",
+    "naam": "Larserpad",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_74": {
+    "N_WEG": "N302",
+    "naam": "Houtribweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_78": {
+    "N_WEG": "N307",
+    "naam": "Dronterringweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_79": {
+    "N_WEG": "N306",
+    "naam": "Drontermeerdijk",
+    "communicatie_naam": "N306 Drontermeerdijk",
+    "regio": "OF"
+  },
+  "provinciale_weg_80": {
+    "N_WEG": "N707",
+    "naam": "Knardijk",
+    "communicatie_naam": "N707 Knardijk",
+    "regio": "ZF"
+  },
+  "provinciale_weg_81": {
+    "N_WEG": "N305",
+    "naam": "Gooiseweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_82": {
+    "N_WEG": "N305",
+    "naam": "Biddingringweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_83": {
+    "N_WEG": "N306",
+    "naam": "Spijkweg",
+    "communicatie_naam": "N306 Spijkweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_84": {
+    "N_WEG": "N707",
+    "naam": "Zeewolderdijk",
+    "communicatie_naam": "N707 Zeewolderdijk",
+    "regio": "ZF"
+  },
+  "provinciale_weg_85": {
+    "N_WEG": "N702",
+    "naam": "Buitenring",
+    "communicatie_naam": "N702 Buitenring",
+    "regio": "ZF"
+  },
+  "provinciale_weg_86": {
+    "N_WEG": "N307",
+    "naam": "Houtribweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_87": {
+    "N_WEG": "N305",
+    "naam": "Waterlandseweg",
+    "communicatie_naam": "N305,Waterlandseweg",
+    "regio": "ZF"
+  },
+  "provinciale_weg_88": {
+    "N_WEG": "N305",
+    "naam": "Gooiseweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_89": {
+    "N_WEG": "N305",
+    "naam": "Gooiseweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_90": {
+    "N_WEG": "",
+    "naam": "Enser rondweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_91": {
+    "N_WEG": "N710",
+    "naam": "Biddingweg",
+    "communicatie_naam": "N710 Biddingweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_92": {
+    "N_WEG": "N704",
+    "naam": "Slingerweg",
+    "communicatie_naam": "N704 Slingerweg",
+    "regio": "ZF"
+  },
+  "provinciale_weg_93": {
+    "N_WEG": "N704",
+    "naam": "Gooimeerdijk-Oost",
+    "communicatie_naam": "N704 Gooimeerdijk-Oost",
+    "regio": "ZF"
+  },
+  "provinciale_weg_94": {
+    "N_WEG": "N705",
+    "naam": "Spiekweg",
+    "communicatie_naam": "N705 Spiekweg",
+    "regio": "ZF"
+  },
+  "provinciale_weg_95": {
+    "N_WEG": "N705",
+    "naam": "Schollevaarweg",
+    "communicatie_naam": "N705 Schollevaarweg",
+    "regio": "ZF"
+  },
+  "provinciale_weg_97": {
+    "N_WEG": "N712",
+    "naam": "Gemaalweg",
+    "communicatie_naam": "N712 Gemaalweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_98": {
+    "N_WEG": "N712",
+    "naam": "Venelaan",
+    "communicatie_naam": "N712 Venelaan",
+    "regio": ""
+  },
+  "provinciale_weg_100": {
+    "N_WEG": "N331",
+    "naam": "Marknesserweg",
+    "communicatie_naam": "N331 Marknesserweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_101": {
+    "N_WEG": "N352",
+    "naam": "Repelweg",
+    "communicatie_naam": "N352 Repelweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_102": {
+    "N_WEG": "N352",
+    "naam": "Kraggenburgerweg",
+    "communicatie_naam": "N352 Kraggenburgerweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_103": {
+    "N_WEG": "N352",
+    "naam": "Kadoelerweg",
+    "communicatie_naam": "N352 Kadoelerweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_104": {
+    "N_WEG": "N351",
+    "naam": "Kuinderweg",
+    "communicatie_naam": "N351 Kuinderweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_105": {
+    "N_WEG": "N352",
+    "naam": "Baan",
+    "communicatie_naam": "N352 Baan",
+    "regio": "NOP"
+  },
+  "provinciale_weg_106": {
+    "N_WEG": "N352",
+    "naam": "Oostereind",
+    "communicatie_naam": "N352 Oostereind",
+    "regio": "NOP"
+  },
+  "provinciale_weg_107": {
+    "N_WEG": "N715",
+    "naam": "Noorderringweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_108": {
+    "N_WEG": "N714",
+    "naam": "Muntweg",
+    "communicatie_naam": "N714 Muntweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_109": {
+    "N_WEG": "N712",
+    "naam": "Staartweg",
+    "communicatie_naam": "N712 Staartweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_110": {
+    "N_WEG": "N716",
+    "naam": "Nagelerweg",
+    "communicatie_naam": "N716 Nagelerweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_111": {
+    "N_WEG": "N716",
+    "naam": "Akkerstraat",
+    "communicatie_naam": "N716 Akkerstraat",
+    "regio": "NOP"
+  },
+  "provinciale_weg_112": {
+    "N_WEG": "N712",
+    "naam": "Galamalaan",
+    "communicatie_naam": "N712 Galamalaan",
+    "regio": "NOP"
+  },
+  "provinciale_weg_113": {
+    "N_WEG": "N352",
+    "naam": "Schokkerringweg",
+    "communicatie_naam": "N352 Schokkerringweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_114": {
+    "N_WEG": "N305",
+    "naam": "Biddingringweg",
+    "communicatie_naam": "N305 Biddingringweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_115": {
+    "N_WEG": "N307",
+    "naam": "Dronterweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_116": {
+    "N_WEG": "N309",
+    "naam": "Elburgerweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_117": {
+    "N_WEG": "N714",
+    "naam": "Espelerweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_118": {
+    "N_WEG": "N302",
+    "naam": "Ganzenweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_119": {
+    "N_WEG": "N305",
+    "naam": "Gooiseweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_120": {
+    "N_WEG": "N717",
+    "naam": "Hannie Schaftweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_121": {
+    "N_WEG": "N307",
+    "naam": "Hanzeweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_122": {
+    "N_WEG": "",
+    "naam": "Kamperweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_123": {
+    "N_WEG": "N351",
+    "naam": "Kuinderweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_124": {
+    "N_WEG": "N351",
+    "naam": "Kuinderweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_125": {
+    "N_WEG": "",
+    "naam": "Larserpad",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_126": {
+    "N_WEG": "N302",
+    "naam": "Larserweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_127": {
+    "N_WEG": "N716",
+    "naam": "Nagelerweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_128": {
+    "N_WEG": "N301",
+    "naam": "Nijkerkseweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_129": {
+    "N_WEG": "N705",
+    "naam": "Spiekweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_130": {
+    "N_WEG": "N351",
+    "naam": "Urkerweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_131": {
+    "N_WEG": "N713",
+    "naam": "Zuidwesterringweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_132": {
+    "N_WEG": "N706",
+    "naam": "Vogelweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_133": {
+    "N_WEG": "N706",
+    "naam": "Vogelweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_134": {
+    "N_WEG": "N331",
+    "naam": "Vollenhoverweg",
+    "communicatie_naam": "N331 Vollenhoverweg",
+    "regio": "NOP"
+  },
+  "provinciale_weg_135": {
+    "N_WEG": "N305",
+    "naam": "Waterlandseweg",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_136": {
+    "N_WEG": "N309",
+    "naam": "Elburgerweg",
+    "communicatie_naam": "N309 Elburgerweg",
+    "regio": "OF"
+  },
+  "provinciale_weg_137": {
+    "N_WEG": "",
+    "naam": "Larserpad",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_138": {
+    "N_WEG": "",
+    "naam": "Larserpad",
+    "communicatie_naam": "",
+    "regio": ""
+  },
+  "provinciale_weg_0": {
+    "N_WEG": "",
+    "naam": "Nijkerkerpad",
+    "communicatie_naam": "",
+    "regio": ""
+  }
+}

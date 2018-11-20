@@ -1,12 +1,16 @@
 <?php
 
 $config = [
-  "subscriptionsFilePath" => "<subscriptionsFilePath>",
-  "notificationsLogFilePath" => "<notificationsLogFilePath>",
-  "apiUrl" => "<apiUrl>",
-  "accessToken" => "<accessToken>",
-  "originator" => "<originator>",
+  "subscriptionsFilePath" => __DIR__ . "/subscriptions.json",
+  "notificationsLogFilePath" => __DIR__ . "/notifications_log.json",
+  "apiUrl" => "<apiUrl>", // message bird api
+  "originator" => "<originator>", // sms originator
   "users" => [
-    '<username>' => '<sha1_password>'
+    "<userName>" => [
+      "id" => 0, // user id
+      "passwordHash" => "0000000000000000000000000000000000000000000000000000000000000000",
+      "hashAlgorithm" => "sha256",
+      "accessToken" => "0000000000000000000000000", // message bird access token
+    ]
   ]
 ];

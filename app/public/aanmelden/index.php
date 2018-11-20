@@ -1,50 +1,42 @@
 <?php
-  $bruggen_en_sluizen = json_decode(file_get_contents("https://www.dataservicepunt.nl/flevoland/data/bruggen_en_sluizen/bruggen_en_sluizen.geojson"), true);
-  $navHtml = file_get_contents("https://www.dataservicepunt.nl/flevoland/partial_nav.html");
-  $footerHtml = file_get_contents("https://www.dataservicepunt.nl/flevoland/partial_footer.html");
+  include("../../private/config.php");
+  include("../../private/load.php");
 ?>
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.dataservicepunt.nl/flevoland/css/style.css">
-    <title>Aanmelden</title>
-  </head>
+  <?php
+    $title = "Aanmelden";
+    include("../../private/head.php");
+  ?>
   <body>
 
     <?php echo $navHtml; ?>
 
     <header>
       <div class="wrapper">
-        <img src="https://www.dataservicepunt.nl/flevoland/img/Logo.png" alt="Provincie Flevoland">
+        <img src="<?php echo $cdnRoot; ?>/img/Logo.png" alt="Provincie Flevoland">
       </div>
     </header>
 
     <main>
       <div class="wrapper" style="padding-top: 8rem">
-        <div class="content" style="max-width: 40rem; background: white; padding: 1rem; margin: auto;">
+        <div class="content" style="max-width: 40rem; background: white; margin: auto;">
           <form method="POST">
             <fieldset>
-              <legend>Aanmelden</legend>
-              <p>Vul onderstaand formulier in om u aan te melden voor notificaties over de beschikbaarheid van bruggen en sluizen.</p>
-              <p>
-                <label for="telefoonnummer">Voer het telefoonnummer in waarop u notificaties wenst te ontvangen:</label><br>
-                <input type="text" id="telefoonnummer" name="telefoonnummer" placeholder="Telefoonnummer">
+              <!--
+                <legend>Aanmelden</legend>
+              -->
+              <p class="spaced">Wilt u een SMS-bericht ontvangen over geplande werkzaamheden, actuele stremmingen en overlast op een weg, brug of sluis waar u regelmatig gebruik van maakt? Vul dan onderstaand formulier in.</p>
+              <p class="spaced">Ik wil SMS ontvangen als er iets aan de hand is met:</p>
+<?php include("../../private/tabs_checkboxes.php"); ?>
+              <p class="spaced">
+                <label for="telefoonnummer">Ik wil een SMS ontvangen op dit nummer:</label><br>
               </p>
-              <p>Selecteer de bruggen en sluizen waarover u notificaties wenst te ontvangen:</p>
-              <p>
-<?php foreach ($bruggen_en_sluizen["features"] as $feature) { ?>
-                <label>
-                  <input type="checkbox" name="objecten[]" value="<?php echo $feature["properties"]["nummer"]; ?>">
-                  <?php echo $feature["properties"]["naam"]; ?>
-                </label>
-                <br>
-<?php } ?>
+              <p style="background: #eee; text-align: center;">
+                <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Telefoon@2x.png">
+                <input type="text" id="telefoonnummer" name="telefoonnummer" placeholder="Telefoonnummer" value="06 - ">
               </p>
-              <p><button>Selectie opslaan</button></p>
+              <p><button>VERSTUUR</button></p>
             </fieldset>
           </form>
         </div>
@@ -52,10 +44,6 @@
     </main>
 
     <?php echo $footerHtml; ?>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script>
       $("form").submit(function (e) {
@@ -73,11 +61,15 @@
             aanmelding[field.name] = field.value;
           }
         });
-        var apiUrl = "http://apis.dataservicepunt.nl/aanmeldingen/";
+        var apiUrl = "<?php echo $config["apiRoot"]; ?>/aanmeldingen/";
         $.post(apiUrl, aanmelding, function (response) {
           console.log(response);
           alert("aanmelding geslaagd");
-        }, "json");
+        }, "json")
+         .fail(function (response) {
+          console.log(response);
+          alert(response.responseJSON.error);
+        });
       });
     </script>
   </body>

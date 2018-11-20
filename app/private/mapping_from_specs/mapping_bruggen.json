@@ -1,0 +1,54 @@
+{
+  "VoB": {
+    "naam": "Voorstersluis Basculebrug",
+    "communicatie_naam": "Kraggenburg - brug Voorstersluis"
+  },
+  "ArB": {
+    "naam": "Arie de Witbrug",
+    "communicatie_naam": "Urk - Arie de Witbrug"
+  },
+  "ZwB": {
+    "naam": "Zwolsebrug",
+    "communicatie_naam": "Urk - Zwolsebrug"
+  },
+  "ElB": {
+    "naam": "Elburgerbrug",
+    "communicatie_naam": "Elburg - Elburgerbrug"
+  },
+  "MaB": {
+    "naam": "Marknessersluis Basculebrug",
+    "communicatie_naam": "Marknesse - brug Marknessesluis"
+  },
+  "FrB": {
+    "naam": "Friesesluis Basculebrug",
+    "communicatie_naam": "Lemmer - brug Friese Sluis"
+  },
+  "KeB": {
+    "naam": "Ketelsluis Ophaalbrug",
+    "communicatie_naam": "Dronten - brug Ketelsluis"
+  },
+  "NoB": {
+    "naam": "Noordersluis Basculebrug",
+    "communicatie_naam": "Lelystad - brug Noordersluis"
+  },
+  "ZuB": {
+    "naam": "Zuidersluis Ophaalbrug",
+    "communicatie_naam": "Almere - brug Zuidersluis"
+  },
+  "VhB": {
+    "naam": "Vollenhoverbrug",
+    "communicatie_naam": "Vollenhove- Vollenhoverbrug"
+  },
+  "ToB": {
+    "naam": "Tollebekerbrug",
+    "communicatie_naam": "Tollebeek - Tollebekerbrug"
+  },
+  "UrB": {
+    "naam": "Urkersluis Basculebrug",
+    "communicatie_naam": "Urk - brug Urkersluis"
+  },
+  "KaB": {
+    "naam": "Kampersluis Ophaalbrug",
+    "communicatie_naam": "Dronten - brug Kampersluis"
+  }
+}

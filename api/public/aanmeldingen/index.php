@@ -1,5 +1,8 @@
 <?php
 
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+
 header("Content-type: application/json");
 header("Access-Control-Allow-Origin: *");
 
@@ -10,6 +13,20 @@ $request = [
 ];
 
 switch ($_SERVER["REQUEST_METHOD"]) {
+  case "GET":
+    if (!file_exists($config["subscriptionsFilePath"])) {
+      copy("{$config["subscriptionsFilePath"]}.dist", $config["subscriptionsFilePath"]);
+    }
+    $subscriptions = json_decode(file_get_contents($config["subscriptionsFilePath"]), true);
+    foreach ($subscriptions["subscriptions"] as $telefoonnummer => $objecten) {
+      foreach ($objecten as $object) {
+        $request["objecten"][$object]++;
+      }
+    }
+    
+    break;
+  // ---------------------------------------------------------------------------
+
   case "POST":
     if ($input = $_POST) {
       // void
@@ -20,6 +37,19 @@ switch ($_SERVER["REQUEST_METHOD"]) {
       break;
     }
     $request["telefoonnummer"] = $input["telefoonnummer"];
+    $request["telefoonnummer"] = preg_replace("/[^0-9]/", "", $request["telefoonnummer"]);
+    $request["telefoonnummer"] = preg_replace(["/^00316/", "/^06/", "/^316/"], "+316", $request["telefoonnummer"]);
+
+    if (strpos($request["telefoonnummer"], "+316") !== 0 ||
+        strlen($request["telefoonnummer"]) !== 12) {
+      header("HTTP/1.1 400 Bad Request");
+      $response = [
+        "error" => "incorrect telefoonnummer",
+        "telefoonnummer" => $request["telefoonnummer"]
+      ];
+      die(json_encode($response));
+    }
+
     $request["objecten"] = $input["objecten"];
 
     if (!file_exists($config["subscriptionsFilePath"])) {
@@ -30,7 +60,7 @@ switch ($_SERVER["REQUEST_METHOD"]) {
     file_put_contents($config["subscriptionsFilePath"], json_encode($subscriptions));
 
     break;
+  // ---------------------------------------------------------------------------
 }
 
 die(json_encode($request));
-
