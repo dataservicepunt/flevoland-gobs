@@ -4,7 +4,6 @@ $config = [
   "subscriptionsFilePath" => __DIR__ . "/subscriptions.json",
   "subscriptionsLogFilePath" => __DIR__ . "/subscriptions_log.json",
   "notificationsLogFilePath" => __DIR__ . "/notifications_log.json",
-  "emailAddress" => "<statsEmailAddress>",
   "apiUrl" => "<apiUrl>", // message bird api
   "originator" => "<originator>", // sms originator
   "users" => [
