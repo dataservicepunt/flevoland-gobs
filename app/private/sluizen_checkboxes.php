@@ -1,5 +1,8 @@
 <?php
   $sluizen = json_decode(file_get_contents(__DIR__ . "/mapping_from_specs/mapping_sluizen.json"), true);
+  usort($sluizen, function ($a, $b) {
+    return $b["communicatie_naam"] < $a["communicatie_naam"];
+  });
   foreach ($sluizen as $id => $sluis) {
     if (!empty($sluis["communicatie_naam"])) {
 ?>
