@@ -87,6 +87,14 @@ switch ($_SERVER["REQUEST_METHOD"]) {
     }
     $request["telefoonnummers"] = array_keys($telefoonnummers);
 
+    if (empty($telefoonnummers)) {
+      header("HTTP/1.1 400 Bad Request");
+      $response = [
+        "error" => "geen telefoonnummers om sms naar te versturen"
+      ];
+      die(json_encode($response));
+    }
+
     for ($i = 0; $i < count($request["telefoonnummers"]); $i += 50) {
       $telefoonnummers = array_slice($request["telefoonnummers"], $i, 50);
       $request["rss"][] = sendBatch(
