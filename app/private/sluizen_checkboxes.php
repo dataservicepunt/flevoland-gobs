@@ -1,7 +1,7 @@
 <?php
   $sluizen = json_decode(file_get_contents(__DIR__ . "/mapping_from_specs/mapping_sluizen.json"), true);
-  foreach ($sluizen as $id => &$sluis) {
-    $sluis["id"] = $id;
+  foreach ($sluizen as $id => $sluis) {
+    $sluizen[$id]["id"] = $id;
   }
   usort($sluizen, function ($a, $b) {
     return $b["communicatie_naam"] < $a["communicatie_naam"];

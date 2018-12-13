@@ -1,7 +1,7 @@
 <?php
   $wegen = json_decode(file_get_contents(__DIR__ . "/mapping_from_specs/mapping_wegen.json"), true);
-  foreach ($wegen as $id => &$weg) {
-    $weg["id"] = $id;
+  foreach ($wegen as $id => $weg) {
+    $wegen[$id]["id"] = $id;
   }
   usort($wegen, function ($a, $b) {
     return $b["naam"] < $a["naam"];

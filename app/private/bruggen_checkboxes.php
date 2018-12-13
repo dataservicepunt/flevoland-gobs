@@ -1,7 +1,7 @@
 <?php
   $bruggen = json_decode(file_get_contents(__DIR__ . "/mapping_from_specs/mapping_bruggen.json"), true);
-  foreach ($bruggen as $id => &$brug) {
-    $brug["id"] = $id;
+  foreach ($bruggen as $id => $brug) {
+    $bruggen[$id]["id"] = $id;
   }
   usort($bruggen, function ($a, $b) {
     return $b["communicatie_naam"] < $a["communicatie_naam"];
