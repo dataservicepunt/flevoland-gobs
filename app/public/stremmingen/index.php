@@ -23,16 +23,15 @@
           <form method="POST">
             <fieldset>
               <legend>Stremmingen</legend>
-              <p>Geen in onderstaand overzicht de actuele status van stremmingen bruggen en sluizen aan.</p>
-<?php
-  include("../../private/tabs_stremmingen.php");
-?>
+              <p>Geef in onderstaand overzicht de actuele status van stremmingen bruggen en sluizen aan.</p>
               <p style="background: #eee; text-align: center;">
                 <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Slot@2x.png">
                 <input type="text" id="username" name="username" placeholder="Gebruikersnaam">
                 <input type="password" id="password" name="password" placeholder="Wachtwoord">
               </p>
-              <p><button>STREMMINGSSTATUS PUBLICEREN</button></p>
+<?php
+  include("../../private/tabs_stremmingen.php");
+?>
             </fieldset>
           </form>
         </div>
@@ -42,6 +41,15 @@
     <?php echo $footerHtml; ?>
 
     <script>
+      $("img.switch").click(function () {
+        $(this).toggleClass("stremming");
+        if ($(this).hasClass("stremming")) {
+          $(this).attr("src", "../assets/switch_stremming.png");
+        } else {
+          $(this).attr("src", "../assets/switch_geen_stremming.png");
+        }
+        console.log("api call update");
+      });
       $("form").submit(function (e) {
         e.preventDefault();
         var formData = $(e.target).serializeArray(),

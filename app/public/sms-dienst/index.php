@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
   <?php
-    $title = "Aanmelden";
+    $title = "SMS-Dienst";
     include("../../private/head.php");
   ?>
   <body>
@@ -20,30 +20,17 @@
 
     <main>
       <div class="wrapper" style="padding-top: 8rem">
-        <div class="content" style="max-width: 40rem; background: white; margin: auto;">
-          <form method="POST">
-            <fieldset>
-              <!--
-                <legend>Aanmelden</legend>
-              -->
-              <p class="spaced">Wilt u een SMS-bericht ontvangen over geplande werkzaamheden, actuele stremmingen en overlast op een weg, brug of sluis waar u regelmatig gebruik van maakt? Vul dan onderstaand formulier in.</p>
-              <p class="spaced">Ik wil SMS ontvangen als er iets aan de hand is met:</p>
-<?php include("../../private/tabs_checkboxes.php"); ?>
-              <p class="spaced">
-                <label for="telefoonnummer">Ik wil een SMS ontvangen op dit nummer:</label><br>
-              </p>
-              <p style="background: #eee; text-align: center;">
-                <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Telefoon@2x.png">
-                <input type="text" id="telefoonnummer" name="telefoonnummer" placeholder="Telefoonnummer" value="06 - ">
-              </p>
-              <p class="spaced">
-                <label>
-                  <input type="checkbox" name="toestemming"> Ik meld me aan voor de <a href="../sms-dienst">SMS-dienst van de provincie Flevoland</a>
-                </label>
-              </p>
-              <p><button>AANMELDEN</button></p>
-            </fieldset>
-          </form>
+        <div class="content" style="max-width: 40rem; background: white; padding: 1rem; margin: auto;">
+          <h1>SMS-dienst van de provincie Flevoland</h1>
+          <p>SMS-berichten ontvangen over geplande werkzaamheden, actuele stremmingen en overlast op een weg, brug of sluis waar u regelmatig gebruik van maakt.</p>
+          <h2>Aanmelden</h2>
+          <p>Om aan te melden voor de SMS-dienst van de provincie Flevoland vult u <a href="../aanmelden">het online aanmeldformulier</a> in.</p>
+          <h2>Kosten</h2>
+          <p>Er zijn geen kosten verbonden aan de SMS-dienst van de provincie Flevoland.</p>
+          <h2>Opslag van gegevens</h2>
+          <p>De SMS-dienst van de provincie Flevoland gebruikt uw telefoonnummer alleen voor het versturen van SMS-berichten over geplande werkzaamheden, actuele stremmingen en overlast op een weg, brug of sluis waar u regelmatig gebruik van maakt.</p>
+          <h2>Afmelden</h2>
+          <p>Om af te melden van de SMS-dienst van de provincie Flevoland vult u <a href="../afmelden">het online afmeldformulier</a> in.</p>
         </div>
       </div>
     </main>

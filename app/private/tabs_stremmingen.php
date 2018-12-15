@@ -38,12 +38,4 @@
     $("[data-tab-id]").hide();
     $("[data-tab-id="+tabId+"]").show();
   });
-  $("img.switch").click(function () {
-    $(this).toggleClass("stremming");
-    if ($(this).hasClass("stremming")) {
-      $(this).attr("src", "../assets/switch_stremming.png");
-    } else {
-      $(this).attr("src", "../assets/switch_geen_stremming.png");
-    }
-  });
 </script>

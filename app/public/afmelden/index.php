@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
   <?php
-    $title = "Aanmelden";
+    $title = "Afmelden";
     include("../../private/head.php");
   ?>
   <body>
@@ -26,22 +26,15 @@
               <!--
                 <legend>Aanmelden</legend>
               -->
-              <p class="spaced">Wilt u een SMS-bericht ontvangen over geplande werkzaamheden, actuele stremmingen en overlast op een weg, brug of sluis waar u regelmatig gebruik van maakt? Vul dan onderstaand formulier in.</p>
-              <p class="spaced">Ik wil SMS ontvangen als er iets aan de hand is met:</p>
-<?php include("../../private/tabs_checkboxes.php"); ?>
+              <p class="spaced">U wilt geen SMS-berichten meer ontvangen over geplande werkzaamheden, actuele stremmingen en overlast op een weg, brug of sluis. Vul onderstaand formulier in.</p>
               <p class="spaced">
-                <label for="telefoonnummer">Ik wil een SMS ontvangen op dit nummer:</label><br>
+                <label for="telefoonnummer">Ik wil geen SMS meer ontvangen op dit nummer:</label><br>
               </p>
               <p style="background: #eee; text-align: center;">
                 <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Telefoon@2x.png">
                 <input type="text" id="telefoonnummer" name="telefoonnummer" placeholder="Telefoonnummer" value="06 - ">
               </p>
-              <p class="spaced">
-                <label>
-                  <input type="checkbox" name="toestemming"> Ik meld me aan voor de <a href="../sms-dienst">SMS-dienst van de provincie Flevoland</a>
-                </label>
-              </p>
-              <p><button>AANMELDEN</button></p>
+              <p><button>AFMELDEN</button></p>
             </fieldset>
           </form>
         </div>
@@ -54,31 +47,27 @@
       $("form").submit(function (e) {
         e.preventDefault();
         var formData = $(e.target).serializeArray(),
-            aanmelding = {};
+            afmelding = {};
         $(formData).each(function (i, field) {
           if (field.name.substr(field.name.length - 2) === "[]") {
             field.name = field.name.substr(0, field.name.length - 2);
-            if (!aanmelding[field.name]) {
-              aanmelding[field.name] = [];
+            if (!afmelding[field.name]) {
+              afmelding[field.name] = [];
             }
-            aanmelding[field.name].push(field.value);
+            afmelding[field.name].push(field.value);
           } else {
-            aanmelding[field.name] = field.value;
+            afmelding[field.name] = field.value;
           }
         });
-        if (aanmelding["toestemming"] !== "on") {
-          alert("Vink eerst het vinkje 'Ik meld me aan voor de SMS-dienst van de provincie Flevoland' aan.");
-        } else {
-          var apiUrl = "<?php echo $config["apiRoot"]; ?>/aanmeldingen/";
-          $.post(apiUrl, aanmelding, function (response) {
-            console.log(response);
-            alert("aanmelding geslaagd");
-          }, "json")
-           .fail(function (response) {
-            console.log(response);
-            alert(response.responseJSON.error);
-          });
-        }
+        var apiUrl = "<?php echo $config["apiRoot"]; ?>/aanmeldingen/";
+        $.post(apiUrl, afmelding, function (response) {
+          console.log(response);
+          alert("afmelding geslaagd");
+        }, "json")
+         .fail(function (response) {
+          console.log(response);
+          alert(response.responseJSON.error);
+        });
       });
     </script>
   </body>
