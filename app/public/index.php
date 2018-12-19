@@ -14,7 +14,7 @@
 
     <header>
       <div class="wrapper">
-        <img src="https://flevowegen.nl/wp-content/uploads/Provincie-Flevoland-logo-01-1.svg" alt="Provincie Flevoland" width="320px">
+        <?php echo $logoHtml; ?>
       </div>
     </header>
 

@@ -14,7 +14,7 @@
 
     <header>
       <div class="wrapper">
-        <img src="<?php echo $cdnRoot; ?>/img/Logo.png" alt="Provincie Flevoland">
+        <?php echo $logoHtml; ?>
       </div>
     </header>
 

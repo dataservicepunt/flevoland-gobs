@@ -12,3 +12,4 @@ if (!empty($includeStats)) {
 // FIXME: CACHING
 $navHtml = "";//file_get_contents("{$cdnRoot}/partial_nav.html");
 $footerHtml = "";//file_get_contents("{$cdnRoot}/partial_footer.html");
+$logoHtml = '<img width="320px" src="https://flevowegen.nl/wp-content/uploads/Provincie-Flevoland-logo-01-1.svg" alt="Provincie Flevoland wegen en vaarwegen">';
