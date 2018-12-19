@@ -10,5 +10,5 @@ if (!empty($includeStats)) {
 }
 
 // FIXME: CACHING
-$navHtml = file_get_contents("{$cdnRoot}/partial_nav.html");
-$footerHtml = file_get_contents("{$cdnRoot}/partial_footer.html");
+$navHtml = "";//file_get_contents("{$cdnRoot}/partial_nav.html");
+$footerHtml = "";//file_get_contents("{$cdnRoot}/partial_footer.html");

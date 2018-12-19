@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
   <?php
-    $title = "Afmelden";
+    $title = "Afmelden SMS-Dienst";
     include("../../private/head.php");
   ?>
   <body>
@@ -26,7 +26,8 @@
               <!--
                 <legend>Aanmelden</legend>
               -->
-              <p class="spaced">U wilt geen SMS-berichten meer ontvangen over geplande werkzaamheden, actuele stremmingen en overlast op een weg, brug of sluis. Vul onderstaand formulier in.</p>
+              <h1 class="spaced">Geen SMS-berichten meer ontvangen?</h1>
+              <p class="spaced">Wilt u geen SMS-berichten meer ontvangen? Vul onderstaand formulier in.</p>
               <p class="spaced">
                 <label for="telefoonnummer">Ik wil geen SMS meer ontvangen op dit nummer:</label><br>
               </p>
