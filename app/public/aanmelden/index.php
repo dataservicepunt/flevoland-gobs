@@ -40,7 +40,7 @@
               </p>
               <p class="spaced">
                 <label>
-                  <input type="checkbox" name="toestemming"> Ik meld me aan voor de <a href="../sms-dienst">SMS-dienst van de provincie Flevoland</a>
+                  <input type="checkbox" name="toestemming"> Ik meld me aan voor de <a href="/">SMS-dienst van de provincie Flevoland</a>
                 </label>
               </p>
               <p><button>AANMELDEN</button></p>
