@@ -14,7 +14,7 @@
 
     <header>
       <div class="wrapper">
-        <img src="https://www.dataservicepunt.nl/flevoland/img/Logo.png" alt="Provincie Flevoland">
+        <?php echo $logoHtml; ?>
       </div>
     </header>
 
