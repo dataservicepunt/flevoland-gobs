@@ -416,8 +416,8 @@
   "provinciale_weg_94": {
     "N_WEG": "N705",
     "naam": "Spiekweg",
-    "communicatie_naam": "N705 Spiekweg",
-    "regio": "ZF"
+    "communicatie_naam": "",
+    "regio": ""
   },
   "provinciale_weg_95": {
     "N_WEG": "N705",
@@ -440,8 +440,8 @@
   "provinciale_weg_100": {
     "N_WEG": "N331",
     "naam": "Marknesserweg",
-    "communicatie_naam": "N331 Marknesserweg",
-    "regio": "NOP"
+    "communicatie_naam": "",
+    "regio": ""
   },
   "provinciale_weg_101": {
     "N_WEG": "N352",
@@ -464,8 +464,8 @@
   "provinciale_weg_104": {
     "N_WEG": "N351",
     "naam": "Kuinderweg",
-    "communicatie_naam": "N351 Kuinderweg",
-    "regio": "NOP"
+    "communicatie_naam": "",
+    "regio": ""
   },
   "provinciale_weg_105": {
     "N_WEG": "N352",
@@ -524,8 +524,8 @@
   "provinciale_weg_114": {
     "N_WEG": "N305",
     "naam": "Biddingringweg",
-    "communicatie_naam": "N305 Biddingringweg",
-    "regio": "OF"
+    "communicatie_naam": "",
+    "regio": ""
   },
   "provinciale_weg_115": {
     "N_WEG": "N307",
@@ -644,8 +644,8 @@
   "provinciale_weg_134": {
     "N_WEG": "N331",
     "naam": "Vollenhoverweg",
-    "communicatie_naam": "N331 Vollenhoverweg",
-    "regio": "NOP"
+    "communicatie_naam": "",
+    "regio": ""
   },
   "provinciale_weg_135": {
     "N_WEG": "N305",
@@ -656,8 +656,8 @@
   "provinciale_weg_136": {
     "N_WEG": "N309",
     "naam": "Elburgerweg",
-    "communicatie_naam": "N309 Elburgerweg",
-    "regio": "OF"
+    "communicatie_naam": "",
+    "regio": ""
   },
   "provinciale_weg_137": {
     "N_WEG": "",

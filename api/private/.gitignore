@@ -1,4 +1,4 @@
 config.php
-notifications_log.json
-subscriptions.json
-subscriptions_log.json
+storageFiles/notifications_log.json
+storageFiles/subscriptions.json
+storageFiles/subscriptions_log.json

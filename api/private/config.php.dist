@@ -1,7 +1,7 @@
 <?php
 
 $config = [
-  "subscriptionsFilePath" => __DIR__ . "/subscriptions.json",
+  //"subscriptionsFilePath" => __DIR__ . "/subscriptions.json",
   "subscriptionsLogFilePath" => __DIR__ . "/subscriptions_log.json",
   "notificationsLogFilePath" => __DIR__ . "/notifications_log.json",
   "apiUrl" => "<apiUrl>", // message bird api
