@@ -1,9 +1,15 @@
 <?php
 
 $config = [
+  "db" => [
+    "host" => "",
+    "name" => "",
+    "user" => "",
+    "pass" => ""
+  ],
   //"subscriptionsFilePath" => __DIR__ . "/subscriptions.json",
-  "subscriptionsLogFilePath" => __DIR__ . "/subscriptions_log.json",
-  "notificationsLogFilePath" => __DIR__ . "/notifications_log.json",
+  //"subscriptionsLogFilePath" => __DIR__ . "/subscriptions_log.json",
+  //"notificationsLogFilePath" => __DIR__ . "/notifications_log.json",
   "apiUrl" => "<apiUrl>", // message bird api
   "originator" => "<originator>", // sms originator
   "users" => [

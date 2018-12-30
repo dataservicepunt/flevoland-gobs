@@ -20,6 +20,7 @@ class UsersStorage {
 
     $stmt = $this->_pdo->prepare("
       SELECT
+        id,
         passwordHash,
         hashAlgorithm,
         accessToken
@@ -40,7 +41,7 @@ class UsersStorage {
         !== strtolower($userConfig["passwordHash"])) {
       return null;
     }
-    
+
     return $userConfig;
   }
 

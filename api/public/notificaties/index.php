@@ -39,7 +39,13 @@ switch ($_SERVER["REQUEST_METHOD"]) {
 
     $request["senderId"] = $userConfig["id"];
 
-    $notificationsStorage->save($request); //FIXME Define attributes
+    $notificationsStorage->save(
+      $request["datetime"],
+      $request["smsText"],
+      $request["smsLength"],
+      $request["objecten"],
+      $request["senderId"]
+    );
 
     $request["telefoonnummers"] = $subscriptionsStorage->getByObjects($request["objecten"]);
     if (empty($request["telefoonnummers"])) {
