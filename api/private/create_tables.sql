@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `subscriptions` (
 CREATE TABLE IF NOT EXISTS `subscriptions_log` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `telefoonnummer` varchar(255) DEFAULT NULL,
-  `objecten` varchar(255) DEFAULT NULL,
+  `objecten` TEXT DEFAULT NULL,
   `datetime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1;
