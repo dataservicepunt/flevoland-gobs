@@ -12,16 +12,22 @@ $pdo = new PDO(
 );
 
 include(__DIR__ . "/classes/UsersStorage.php");
-$usersStorage = new UsersStorage($config, $pdo);
+$usersStorage = new UsersStorage($pdo);
 
 include(__DIR__ . "/classes/SubscriptionsStorage.php");
-$subscriptionsStorage = new SubscriptionsStorage($config, $pdo);
+$subscriptionsStorage = new SubscriptionsStorage($pdo);
 
 include(__DIR__ . "/classes/SubscriptionsLogStorage.php");
-$subscriptionsLogStorage = new SubscriptionsLogStorage($config, $pdo);
+$subscriptionsLogStorage = new SubscriptionsLogStorage($pdo);
 
 include(__DIR__ . "/classes/NotificationsStorage.php");
-$notificationsStorage = new NotificationsStorage($config, $pdo);
+$notificationsStorage = new NotificationsStorage($pdo);
 
 include(__DIR__ . "/classes/Sender.php");
-$sender = new Sender($config, $pdo);
+$sender = new Sender(
+  $config["sms"]["apiUrl"],
+  $config["sms"]["originator"]
+);
+
+include(__DIR__ . "/classes/NumberFunctions.php");
+$numberFunctions = new NumberFunctions();

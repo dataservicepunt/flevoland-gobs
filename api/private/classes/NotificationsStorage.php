@@ -2,15 +2,10 @@
 
 class NotificationsStorage {
 
-  //private $_storageFilePath;
   private $_pdo;
 
-  public function __construct($config, $pdo) {
+  public function __construct($pdo) {
     $this->_pdo = $pdo;
-    //$this->_storageFilePath = $config["notificationsLogFilePath"];
-    //if (!file_exists($this->_storageFilePath)) {
-    //  copy("{$this->_storageFilePath}.dist", $this->_storageFilePath);
-    //}
   }
 
   /**
@@ -40,7 +35,6 @@ class NotificationsStorage {
     return [
       "notifications" => $notifications
     ];
-    //$notifications = json_decode(file_get_contents($this->_storageFilePath), true);
   }
 
   /**
@@ -59,9 +53,6 @@ class NotificationsStorage {
       "objecten" => implode(",", $objecten),
       "senderId" => $senderId
     ]);
-    //$notifications = $this->get();
-    //$notifications["notifications"][] = $request;
-    //file_put_contents($this->_storageFilePath, json_encode($notifications));
   }
 
 }

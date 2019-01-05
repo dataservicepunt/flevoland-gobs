@@ -2,14 +2,9 @@
 
 class SubscriptionsStorage {
 
-  //private $_storageFilePath;
   private $_pdo;
 
-  public function __construct($config, $pdo) {
-    //$this->_storageFilePath = $config["subscriptionsFilePath"];
-    //if (!file_exists($this->_storageFilePath)) {
-    //  copy("{$this->_storageFilePath}.dist", $this->_storageFilePath);
-    //}
+  public function __construct($pdo) {
     $this->_pdo = $pdo;
   }
 
@@ -31,8 +26,6 @@ class SubscriptionsStorage {
     return [
       "subscriptions" => $subscriptions
     ];
-
-    //$subscriptions = json_decode(file_get_contents($this->_storageFilePath), true);
   }
 
   /**
@@ -56,17 +49,6 @@ class SubscriptionsStorage {
     $telefoonnummers = $stmt->fetchAll(PDO::FETCH_COLUMN);
 
     return $telefoonnummers;
-
-    //$subscriptions = $this->get();
-    //$telefoonnummers = [];
-    //foreach ($objecten as $object) {
-    // foreach ($subscriptions["subscriptions"] as $telefoonnummer => $objecten) {
-    //    if (in_array($object, $objecten)) {
-    //      $telefoonnummers[$telefoonnummer] = true;
-    //    }
-    //  }
-    //}
-    //return array_keys($telefoonnummers);
   }
 
   /**
@@ -85,13 +67,6 @@ class SubscriptionsStorage {
       $counts[$object["object"]] = $object["subscriptionCount"];
     }
     return $counts;
-    //$subscriptions = $this->get();
-    //$counts = [];
-    //foreach ($subscriptions["subscriptions"] as $telefoonnummer => $objecten) {
-    //  foreach ($objecten as $object) {
-    //    $counts[$object]++;
-    //  }
-    //}
   }
 
   /**
@@ -117,9 +92,6 @@ class SubscriptionsStorage {
       ]);
     }
     $this->_pdo->commit();
-    //$subscriptions = $this->get();
-    //$subscriptions["subscriptions"][$telefoonnummer] = $objecten;
-    //file_put_contents($this->_storageFilePath, json_encode($subscriptions));
   }
 
 }

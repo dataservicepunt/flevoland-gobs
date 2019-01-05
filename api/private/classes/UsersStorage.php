@@ -2,11 +2,9 @@
 
 class UsersStorage {
 
-  private $_users;
   private $_pdo;
 
-  public function __construct($config, $pdo) {
-    $this->_users = $config["users"];
+  public function __construct($pdo) {
     $this->_pdo = $pdo;
   }
 

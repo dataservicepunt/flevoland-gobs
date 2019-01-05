@@ -6,9 +6,9 @@ class Sender {
   private $_originator;
   private $_accessToken;
 
-  public function __construct($config) {
-    $this->_apiUrl = $config["apiUrl"];
-    $this->_originator = $config["originator"];
+  public function __construct($apiUrl, $originator) {
+    $this->_apiUrl = $apiUrl;
+    $this->_originator = $originator;
   }
 
   /**

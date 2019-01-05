@@ -10,8 +10,6 @@
   ?>
   <body>
 
-    <?php echo $navHtml; ?>
-
     <header>
       <div class="wrapper">
         <?php echo $logoHtml; ?>
@@ -34,8 +32,6 @@
         </div>
       </div>
     </main>
-
-    <?php echo $footerHtml; ?>
 
     <script>
       $("form").submit(function (e) {

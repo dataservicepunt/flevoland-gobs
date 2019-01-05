@@ -9,16 +9,16 @@
   foreach ($wegen as $weg) {
     if (!empty($weg["communicatie_naam"])) {
 ?>
-  <label>
-    <input type="checkbox" name="objecten[]" value="<?php echo $weg["id"]; ?>">
-    <?php
-      echo $weg["communicatie_naam"];
-      if (!empty($includeStats) && !empty($stats["objecten"][$weg["id"]])) {
-        echo " ({$stats["objecten"][$weg["id"]]})";
-      }
-    ?>
-  </label>
-  <br>
+    <label>
+      <input type="checkbox" name="objecten[]" value="<?php echo $weg["id"]; ?>">
+      <?php
+        echo $weg["communicatie_naam"];
+        if (!empty($includeStats) && !empty($stats["objecten"][$weg["id"]])) {
+          echo " ({$stats["objecten"][$weg["id"]]})";
+        }
+      ?>
+    </label>
+    <br>
 <?php
     } // if
   } // foreach

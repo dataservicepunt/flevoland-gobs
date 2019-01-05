@@ -5,22 +5,6 @@ header("Access-Control-Allow-Origin: *");
 
 include("../../private/load.php");
 
-function formatNumber($telefoonnummer) {
-  $telefoonnummer = preg_replace("/[^0-9]/", "", $telefoonnummer);
-  $telefoonnummer = preg_replace(["/^00316/", "/^06/", "/^316/"], "+316", $telefoonnummer);
-  return $telefoonnummer;
-}
-
-function validNumberFormat($telefoonnummer) {
-  if (strpos($telefoonnummer, "+316") !== 0) {
-    return false;
-  }
-  if (strlen($telefoonnummer) !== 12) {
-    return false;
-  }
-  return true;
-}
-
 $request = [
   "datetime" => date("Y-m-d H:i:s"),
 ];
@@ -40,10 +24,10 @@ switch ($_SERVER["REQUEST_METHOD"]) {
       break;
     }
 
-    $request["telefoonnummer"] = formatNumber($input["telefoonnummer"]);
+    $request["telefoonnummer"] = $numberFunctions->formatNumber($input["telefoonnummer"]);
     $request["objecten"] = $input["objecten"];
 
-    if (!validNumberFormat($request["telefoonnummer"])) {
+    if (!$numberFunctions->validNumberFormat($request["telefoonnummer"])) {
       header("HTTP/1.1 400 Bad Request");
       $response = [
         "error" => "incorrect telefoonnummer",

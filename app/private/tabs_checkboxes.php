@@ -1,14 +1,14 @@
 <div style="display:flex">
   <div class="tab-button active" data-corresponding-tab-id="wegen">
-    <img src="<?php echo $cdnRoot; ?>/img/gobs/Wegen@2x.png">
+    <img src="<?php echo $config["appRoot"]; ?>/assets/Wegen@2x.png">
     <p>wegen</p>
   </div>
   <div class="tab-button" data-corresponding-tab-id="bruggen">
-    <img src="<?php echo $cdnRoot; ?>/img/gobs/Bruggen@2x.png">
+    <img src="<?php echo $config["appRoot"]; ?>/assets/Bruggen@2x.png">
     <p>bruggen</p>
   </div>
   <div class="tab-button" data-corresponding-tab-id="sluizen">
-    <img src="<?php echo $cdnRoot; ?>/img/gobs/Sluizen@2x.png">
+    <img src="<?php echo $config["appRoot"]; ?>/assets/Sluizen@2x.png">
     <p>sluizen</p>
   </div>
 </div>

@@ -10,7 +10,6 @@
     include("../../private/head.php");
   ?>
   <body>
-    <?php echo $navHtml; ?>
 
     <header>
       <div class="wrapper">
@@ -34,7 +33,7 @@
   include("../../private/tabs_checkboxes.php");
 ?>
               <p style="background: #eee; text-align: center;">
-                <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Slot@2x.png">
+                <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $config["appRoot"]; ?>/assets/Slot@2x.png">
                 <input type="text" id="username" name="username" placeholder="Gebruikersnaam">
                 <input type="password" id="password" name="password" placeholder="Wachtwoord">
               </p>
@@ -44,8 +43,6 @@
         </div>
       </div>
     </main>
-
-    <?php echo $footerHtml; ?>
 
     <script>
       $("form").submit(function (e) {
