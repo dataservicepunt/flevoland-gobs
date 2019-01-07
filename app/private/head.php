@@ -13,4 +13,12 @@
   <meta name="msapplication-TileImage" content="<?php echo $config["appRoot"]; ?>/assets/cropped-favicon_kiekr-270x270.png">
 
   <script src="<?php echo $config["appRoot"]; ?>/assets/jquery-3.3.1.min.js"></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131829478-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-131829478-1');
+  </script>
 </head>
