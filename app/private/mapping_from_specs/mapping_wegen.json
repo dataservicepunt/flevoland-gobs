@@ -42,9 +42,9 @@
     "regio": ""
   },
   "provinciale_weg_8": {
-    "N_WEG": "N307",
+    "N_WEG": "N711",
     "naam": "Dronterringweg",
-    "communicatie_naam": "N307 Dronterringweg",
+    "communicatie_naam": "N711 Dronterringweg",
     "regio": "OF"
   },
   "provinciale_weg_9": {
@@ -252,9 +252,9 @@
     "regio": "ZF"
   },
   "provinciale_weg_44": {
-    "N_WEG": "S104",
+    "N_WEG": "N703",
     "naam": "Tussenring",
-    "communicatie_naam": "S104,Tussenring",
+    "communicatie_naam": "N703 Tussenring",
     "regio": "ZF"
   },
   "provinciale_weg_45": {
@@ -290,8 +290,8 @@
   "provinciale_weg_67": {
     "N_WEG": "N307",
     "naam": "Passage",
-    "communicatie_naam": "N307 Passage Dronten",
-    "regio": "OF"
+    "communicatie_naam": "",
+    "regio": ""
   },
   "provinciale_weg_68": {
     "N_WEG": "N708",
@@ -374,7 +374,7 @@
   "provinciale_weg_87": {
     "N_WEG": "N305",
     "naam": "Waterlandseweg",
-    "communicatie_naam": "N305,Waterlandseweg",
+    "communicatie_naam": "N305 Waterlandseweg",
     "regio": "ZF"
   },
   "provinciale_weg_88": {
@@ -486,9 +486,9 @@
     "regio": ""
   },
   "provinciale_weg_108": {
-    "N_WEG": "N714",
+    "N_WEG": "N351",
     "naam": "Muntweg",
-    "communicatie_naam": "N714 Muntweg",
+    "communicatie_naam": "N351 Muntweg",
     "regio": "NOP"
   },
   "provinciale_weg_109": {
