@@ -18,7 +18,7 @@
 
     <main>
       <div class="wrapper" style="padding-top: 8rem">
-        <div class="content" style="max-width: 40rem; background: white; margin: auto;">
+        <div class="content" style="max-width: 40rem; background: white; margin: auto; padding: 10px;">
           <p>Bron: <a href="https://sms.flevowegen.nl/api/notificaties/">https://sms.flevowegen.nl/api/notificaties/</a></p>
 
 <?php
