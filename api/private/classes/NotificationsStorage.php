@@ -9,7 +9,7 @@ class NotificationsStorage {
   }
 
   /**
-   * Get notifications from file.
+   * Get notifications.
    */
   public function get() {
     $sql = "
@@ -38,7 +38,7 @@ class NotificationsStorage {
   }
 
   /**
-   * Save notification to file.
+   * Save notification.
    */
   public function save($datetime, $smsText, $smsLength, $objecten, $senderId) {
     $sql = "

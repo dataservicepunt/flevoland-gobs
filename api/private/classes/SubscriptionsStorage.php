@@ -9,7 +9,7 @@ class SubscriptionsStorage {
   }
 
   /**
-   * Get subscriptions from file.
+   * Get subscriptions.
    */
   public function get() {
     $sql = "
@@ -70,7 +70,7 @@ class SubscriptionsStorage {
   }
 
   /**
-   * Save subscriptions to file.
+   * Save subscriptions.
    */
   public function save($telefoonnummer, $objecten) {
     $this->_pdo->beginTransaction();

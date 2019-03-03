@@ -9,7 +9,27 @@ class SubscriptionsLogStorage {
   }
 
   /**
-   * Save subscriptionslog to file.
+   * Get subscriptions logs.
+   */
+  public function get() {
+    $sql = "
+      SELECT
+        telefoonnummer,
+        objecten,
+        datetime
+      FROM subscriptions_log
+    ";
+    $rs = [];
+    foreach ($this->_pdo->query($sql, PDO::FETCH_ASSOC) as $sub) {
+      $sub["objecten"] = count(explode(",", $sub["objecten"]));
+      $sub["telefoonnummer"] = substr($sub["telefoonnummer"], -3);
+      $rs[] = $sub;
+    }
+    return $rs;
+  }
+
+  /**
+   * Save subscriptionslog.
    */
   public function save($telefoonnummer, $objecten, $datetime) {
     $stmt = $this->_pdo->prepare("

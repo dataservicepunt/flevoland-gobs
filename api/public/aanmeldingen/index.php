@@ -12,6 +12,7 @@ $request = [
 switch ($_SERVER["REQUEST_METHOD"]) {
   case "GET":
     $request["objecten"] = $subscriptionsStorage->getCounts();
+    $request["logs"] = $subscriptionsLogStorage->get();
     break;
 
   case "POST":
