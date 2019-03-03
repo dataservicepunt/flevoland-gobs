@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
   <?php
-    $title = "Aanmelden SMS-Dienst";
+    $title = "Bekijken statistieken aanmeldingen SMS-Dienst";
     include("../../private/head.php");
   ?>
   <body>
