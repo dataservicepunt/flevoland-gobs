@@ -13,6 +13,7 @@ switch ($_SERVER["REQUEST_METHOD"]) {
   case "GET":
     $request["objecten"] = $subscriptionsStorage->getCounts();
     $request["logs"] = $subscriptionsLogStorage->get();
+    $request["week_by_week"] = $subscriptionsLogStorage->getWeekByWeek();
     break;
 
   case "POST":

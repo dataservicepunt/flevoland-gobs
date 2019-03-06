@@ -29,6 +29,53 @@ class SubscriptionsLogStorage {
   }
 
   /**
+   * Get subscriptions mutations by week.
+   */
+  public function getWeekByWeek() {
+    $sql = "
+      SELECT
+        telefoonnummer,
+        objecten,
+        datetime
+      FROM subscriptions_log
+      ORDER BY datetime
+    ";
+    $logs = [];
+    $telefoonnummers = [];
+    $objecten = [];
+    foreach ($this->_pdo->query($sql, PDO::FETCH_ASSOC) as $log) {
+      $log["objecten"] = explode(",", $log["objecten"]);
+
+      if (isset($telefoonnummers[$log["telefoonnummer"]])) {
+        $additions = array_diff($log["objecten"], $telefoonnummers[$log["telefoonnummer"]]);
+        $deletions = array_diff($telefoonnummers[$log["telefoonnummer"]], $log["objecten"]);
+      } else {
+        $additions = $log["objecten"];
+        $deletions = [];
+      }
+
+      $telefoonnummers[$log["telefoonnummer"]] = $log["objecten"];
+
+      foreach ($additions as $object) {
+        $logs[] = [
+          "datetime" => $log["datetime"],
+          "object" => $object,
+          "mutation" => "aanmelding"
+        ];
+      }
+
+      foreach ($deletions as $object) {
+        $logs[] = [
+          "datetime" => $log["datetime"],
+          "object" => $object,
+          "mutation" => "afmelding"
+        ];
+      }
+    }
+    return $logs;
+  }
+
+  /**
    * Save subscriptionslog.
    */
   public function save($telefoonnummer, $objecten, $datetime) {
