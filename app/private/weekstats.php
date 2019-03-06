@@ -5,6 +5,8 @@
   color: #333;
   font-weight: 100;
   font-size: 12px;
+  margin: 10px 10px 10px 0;
+  display: block;
 }
 .label.--yellow {
   background: #FBB907;
@@ -16,6 +18,9 @@
 .label.--red {
   background: #dc3545;
   color: white;
+}
+h2 {
+  margin-top: 40px;
 }
 </style>
 <?php
@@ -43,12 +48,27 @@
   }
 
   $logs = array_reverse($rs["week_by_week"]);
+
+  $buckets = [];
+
   foreach ($logs as $log) {
-?>
-  <div>
-    <p style="font-size: 12px"><?php echo $log["datetime"]; ?></p>
-    <p><?php echo $log["mutation"]; ?> <?php printObjectLabel($log["object"]); ?></p>
-    <hr>
-  </div>
-<?php
-  } // foreach
+    $date = new DateTime($log["datetime"]);
+    $jaar = $date->format("Y");
+    $week = $date->format("W");
+    $buckets[$jaar][$week][$log["object"]][$log["mutation"]]++;
+  }
+
+  foreach ($buckets as $jaar => $weken) {
+    foreach ($weken as $week => $objecten) {
+      echo "<h2>{$jaar} week {$week}</h2>";
+      foreach ($objecten as $object => $mut) {
+        printObjectLabel($object);
+        if ($mut["aanmelding"]) {
+          echo "+{$mut["aanmelding"]}<br>";
+        }
+        if ($mut["afmelding"]) {
+          echo "-{$mut["afmelding"]}<br>";
+        }
+      }
+    }
+  }
