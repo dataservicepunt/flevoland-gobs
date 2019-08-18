@@ -212,7 +212,7 @@
   "provinciale_weg_37": {
     "N_WEG": "N306",
     "naam": "Harderbosweg",
-    "communicatie_naam": "N306 Harderbosweg",
+    "communicatie_naam": "N306 Harderdijk",
     "regio": "OF"
   },
   "provinciale_weg_38": {
@@ -300,16 +300,16 @@
     "regio": "OF"
   },
   "provinciale_weg_70": {
-    "N_WEG": "",
+    "N_WEG": "N720",
     "naam": "Swifterringweg",
-    "communicatie_naam": "",
-    "regio": ""
+    "communicatie_naam": "N720 Swifterringweg",
+    "regio": "OF"
   },
   "provinciale_weg_72": {
     "N_WEG": "",
     "naam": "Larserpad",
-    "communicatie_naam": "",
-    "regio": ""
+    "communicatie_naam": "Larserpad",
+    "regio": "OF"
   },
   "provinciale_weg_74": {
     "N_WEG": "N302",
@@ -391,9 +391,9 @@
   },
   "provinciale_weg_90": {
     "N_WEG": "",
-    "naam": "Enser rondweg",
-    "communicatie_naam": "",
-    "regio": ""
+    "naam": "Enser Rondweg",
+    "communicatie_naam": "Enser Rondweg",
+    "regio": "NOP"
   },
   "provinciale_weg_91": {
     "N_WEG": "N710",
@@ -570,10 +570,10 @@
     "regio": ""
   },
   "provinciale_weg_122": {
-    "N_WEG": "",
+    "N_WEG": "N765",
     "naam": "Kamperweg",
-    "communicatie_naam": "",
-    "regio": ""
+    "communicatie_naam": "N765 Kamperweg",
+    "regio": "NOP"
   },
   "provinciale_weg_123": {
     "N_WEG": "N351",
@@ -670,6 +670,12 @@
     "naam": "Larserpad",
     "communicatie_naam": "",
     "regio": ""
+  },
+  "provinciale_weg_139": {
+    "N_WEG": "N727",
+    "naam": "Anthony Fokkerweg",
+    "communicatie_naam": "N727 Anthony Fokkerweg",
+    "regio": "OF"
   },
   "provinciale_weg_0": {
     "N_WEG": "",
