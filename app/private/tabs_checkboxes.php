@@ -14,20 +14,19 @@
 </div>
 <div class="tabs">
   <div data-tab-id="wegen">
-    <p class="spaced">
+    <div class="spaced">
 <?php include("../../private/provinciale_wegen_checkboxes.php"); ?>
-    </p>
+    </div>
   </div>
   <div data-tab-id="bruggen" style="display: none">
-    <p class="spaced">
-      <p class="spaced">
+    <div class="spaced">
 <?php include("../../private/bruggen_checkboxes.php"); ?>
-    </p>
+    </div>
   </div>
   <div data-tab-id="sluizen" style="display: none">
-    <p class="spaced">
+    <div class="spaced">
 <?php include("../../private/sluizen_checkboxes.php"); ?>
-    </p>
+    </div>
   </div>
 </div>
 <script>
