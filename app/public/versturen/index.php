@@ -29,6 +29,12 @@
               <p>
                 <label for="notificatie">Vul de notificatie in die u wilt versturen:</label><br>
                 <textarea id="notificatie" name="notificatie" placeholder="Notificatie"></textarea>
+                <div>Aantal karakters: <span class="count">0</span></div>
+                <script>
+                    $("textarea").keyup(function () {
+                         $(".count").html(this.value.length);
+                    });
+                </script>
                 <span style="font-size: 10px">bulkopties:
                   <a href="#" onclick="event.preventDefault(); $('input[type=checkbox]').prop('checked', true)">alle objecten selecteren</a>,
                   <a href="#" onclick="event.preventDefault(); $('input[type=checkbox]').prop('checked', false)">objectselectie wissen</a>
