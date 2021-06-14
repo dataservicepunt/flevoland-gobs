@@ -27,7 +27,8 @@
           <p class="spaced">Er zijn geen kosten verbonden aan deze dienst.</p>
           <h2 class="spaced">Opslag van gegevens</h2>
           <p class="spaced">Deze dienst gebruikt uw telefoonnummer alleen voor het versturen van SMS-berichten over geplande werkzaamheden, actuele stremmingen en overlast op een weg, brug of sluis waar u regelmatig gebruik van maakt. Uw telefoonnummer wordt niet gedeeld of op andere wijze gebruikt.</p>
-          <h2 class="spaced">Afmelden</h2>
+          <h2 class="spaced">Instellingen wijzigen of afmelden</h2>
+          <p class="spaced">Bent u aangemeld en wilt u wijzigen welke SMS-berichten u ontvangt? Vul dan <a href="aanmelden">het online aanmeldformulier</a> opnieuw in voor uw telefoonnummer. Uw oude instellingen worden dan gewijzigd.</p>
           <p class="spaced">Wilt u geen SMS-berichten meer ontvangen? Vul dan <a href="afmelden">het online afmeldformulier</a> in.</p>
         </div>
       </div>
