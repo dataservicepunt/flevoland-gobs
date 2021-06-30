@@ -30,4 +30,5 @@ $sender = new Sender(
 );
 
 include(__DIR__ . "/classes/NumberFunctions.php");
-$numberFunctions = new NumberFunctions();
+$blacklist = json_decode(file_get_contents(__DIR__ . "/blacklist.json"));
+$numberFunctions = new NumberFunctions($blacklist->blacklist);

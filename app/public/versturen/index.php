@@ -33,6 +33,7 @@
                 <script>
                     $("textarea").keyup(function () {
                          $(".count").html(this.value.length);
+                         //console.log(Math.ceil(this.value.length / 160));
                     });
                 </script>
                 <span style="font-size: 10px">bulkopties:

@@ -38,6 +38,15 @@ switch ($_SERVER["REQUEST_METHOD"]) {
       die(json_encode($response));
     }
 
+    if ($numberFunctions->blacklisted($request["telefoonnummer"])) {
+      header("HTTP/1.1 400 Bad Request");
+      $response = [
+        "error" => "geblokkeerd telefoonnummer",
+        "telefoonnummer" => $request["telefoonnummer"]
+      ];
+      die(json_encode($response));
+    }
+
     $subscriptionsStorage->save(
       $request["telefoonnummer"],
       $request["objecten"]
