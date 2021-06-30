@@ -10,8 +10,6 @@
   ?>
   <body>
 
-    <?php echo $navHtml; ?>
-
     <header>
       <div class="wrapper">
         <?php echo $logoHtml; ?>
@@ -31,16 +29,21 @@
               <p class="spaced">Wilt u een SMS-bericht ontvangen over geplande werkzaamheden, actuele stremmingen en overlast op een weg, brug of sluis waar u regelmatig gebruik van maakt? Vul dan onderstaand formulier in.</p>
               <p class="spaced">Ik wil graag persoonlijk geïnformeerd worden en een SMS ontvangen als er iets aan de hand is met:</p>
 <?php include("../../private/tabs_checkboxes.php"); ?>
+              <center>
+                <a href="<?php echo $config["appRoot"]; ?>/assets/Kaart Provinciale (vaar)wegen en objecten januari 2019.jpg">
+                    <img src="<?php echo $config["appRoot"]; ?>/assets/Kaart Provinciale (vaar)wegen en objecten januari 2019 - klein.jpg">
+                </a>
+              </center>
               <p class="spaced">
                 <label for="telefoonnummer">Ik wil een SMS ontvangen op dit nummer:</label><br>
               </p>
               <p style="background: #eee; text-align: center;">
-                <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Telefoon@2x.png">
+                <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $config["appRoot"]; ?>/assets/Telefoon@2x.png">
                 <input type="text" id="telefoonnummer" name="telefoonnummer" placeholder="Telefoonnummer" value="06 - ">
               </p>
               <p class="spaced">
                 <label>
-                  <input type="checkbox" name="toestemming"> Ik meld me aan voor de <a href="/">SMS-dienst van de provincie Flevoland</a>
+                  <input type="checkbox" name="toestemming"> Ik meld me aan voor de <a href="<?php echo $config["appRoot"]; ?>/">SMS-dienst van de provincie Flevoland</a>
                 </label>
               </p>
               <p><button>AANMELDEN</button></p>
@@ -49,8 +52,6 @@
         </div>
       </div>
     </main>
-
-    <?php echo $footerHtml; ?>
 
     <script>
       $("form").submit(function (e) {

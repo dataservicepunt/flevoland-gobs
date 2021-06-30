@@ -1,3 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+h1 {
+  font-size: 1.8em;
+  font-weight: 100;
+  color: #e70077;
+}
+h2 {
+  font-size: 1.4em;
+  font-weight: 100;
+}
+.wrapper {
+  max-width: 980px;
+  margin: auto
+}
+img {
+  margin: 0 1rem;
+  max-width: 80%;
+}
+nav {
+  background: #f5f6f6;
+  font-size: 0.85rem;
+  padding: 0.8rem;
+  text-align: right;
+}
+nav a {
+  color: #0057ad;
+  text-decoration: none;
+  margin: 0 1rem;
+  line-height: 1.8em;
+}
+header {
+  padding: 1.6rem 0;
+}
+main {
+  background: url(/assets/Batavia.jpg) top center no-repeat;
+}
+p {
+    line-height: 1.4em;
+}
+footer {
+  background: #277ac0;
+  color: white;
+  padding: 3.2rem 0;
+  margin-top: 120px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer h2 {
+  margin-top: 0;
+}
 textarea {
   width: 100%;
   min-height: 100px

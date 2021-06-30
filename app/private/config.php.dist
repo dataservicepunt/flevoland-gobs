@@ -1,5 +1,6 @@
 <?php
 
 $config = [
+  "appRoot" => "<appRoot>",
   "apiRoot" => "<apiRoot>"
 ];

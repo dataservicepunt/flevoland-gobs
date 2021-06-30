@@ -10,7 +10,8 @@
     include("../../private/head.php");
   ?>
   <body>
-    <?php echo $navHtml; ?>
+
+    <div class="overlay" style="display: none; width: 100%; height: 100%; position: fixed; background-color: black; opacity: 0.9"></div>
 
     <header>
       <div class="wrapper">
@@ -28,13 +29,24 @@
               <p>
                 <label for="notificatie">Vul de notificatie in die u wilt versturen:</label><br>
                 <textarea id="notificatie" name="notificatie" placeholder="Notificatie"></textarea>
+                <div>Aantal karakters: <span class="count">0</span></div>
+                <script>
+                    $("textarea").keyup(function () {
+                         $(".count").html(this.value.length);
+                         //console.log(Math.ceil(this.value.length / 160));
+                    });
+                </script>
+                <span style="font-size: 10px">bulkopties:
+                  <a href="#" onclick="event.preventDefault(); $('input[type=checkbox]').prop('checked', true)">alle objecten selecteren</a>,
+                  <a href="#" onclick="event.preventDefault(); $('input[type=checkbox]').prop('checked', false)">objectselectie wissen</a>
+                </span>
               </p>
               <p>Selecteer de bruggen en sluizen waarop deze notificatie betrekking heeft:</p>
 <?php
   include("../../private/tabs_checkboxes.php");
 ?>
               <p style="background: #eee; text-align: center;">
-                <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $cdnRoot; ?>/img/gobs/Slot@2x.png">
+                <img style="vertical-align: top; width: 50px; margin: 0; margin-top: 0.4em" src="<?php echo $config["appRoot"]; ?>/assets/Slot@2x.png">
                 <input type="text" id="username" name="username" placeholder="Gebruikersnaam">
                 <input type="password" id="password" name="password" placeholder="Wachtwoord">
               </p>
@@ -45,11 +57,10 @@
       </div>
     </main>
 
-    <?php echo $footerHtml; ?>
-
     <script>
       $("form").submit(function (e) {
         e.preventDefault();
+        $(".overlay").show();
         var formData = $(e.target).serializeArray(),
             notificatie = {};
         $(formData).each(function (i, field) {
@@ -65,16 +76,18 @@
         });
         var apiUrl = "<?php echo $config["apiRoot"]; ?>/notificaties/";
         $.post(apiUrl, notificatie, function (response) {
-          console.log(response);
+          //console.log(response);
           if (response.rs.errors) {
             alert(response.rs.errors[0].description);
           } else {
             alert("notificatie verstuurd naar " + response.rs.recipients.totalCount + " telefoonnummer(s)");
           }
+          $(".overlay").hide();
         }, "json")
-         .fail(function (response) {
-           console.log(response);
-           alert(response.responseJSON.error);
+        .fail(function (response) {
+          //console.log(response);
+          alert(response.responseJSON.error);
+          $(".overlay").hide();
         });
       });
     </script>
